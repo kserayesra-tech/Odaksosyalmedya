@@ -29,9 +29,14 @@ Farkımız şu: ödev, deneme, devam ve veli görüşmesi her hafta ölçülür;
 
 ## Görsel
 - Az metin: kapakta en fazla 7 kelime.
-- Carousel: en fazla 7 kart. 1. kart soru ya da vaat, son kart özet ve kaydetme çağrısı.
+- Carousel: en fazla 7 kart (rehberlik programı postlarında kapak + kademe sayısı kadar olabilir). 1. kart soru ya da vaat, son kart özet ve kaydetme çağrısı.
 - Emoji: caption'da en fazla 3 tane, kapakta hiç kullanılmaz.
 - Öğrenci fotoğrafı yalnızca yazılı izinle, sırttan ya da yüzü görünmeyen kareler tercih edilir.
+
+## Velilerin sevdiği format: Rehberlik Programı
+Kademe bazlı (5, 6, 7, 8/LGS, 9-10, 11, 12/mezun), konu bazlı değil. Her kartta süre, günlük miktar,
+"nasıl çalışmalı?", prova günü, takip çizelgesi ve velimize not bulunur. Hem WhatsApp veli gruplarında
+(her gruba kendi kartı) hem Instagram'da (carousel) kullanılır. Örnek: `sosyal-medya/programlar/2026-11-ara-tatil/`.
 
 ## Hashtag seti (en fazla 5)
 Sabit: `#OdakEğitim` + bağlama göre 2-4 tane: `#LGS2027` `#YKS2027` `#lgshazırlık` `#rehberlik` `#veliköşesi` `#denemesınavı`

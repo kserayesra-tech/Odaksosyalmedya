@@ -26,3 +26,15 @@ Biçim:
 - Düzeltme: Kullanıcı "mantıklı" dedi, geri sayım kalıyor.
 - Kural: Tatil duyurularında sınav geri sayımı kullanılabilir. Ana mesaj tatil olur, geri sayım küçük puntoyla yer alır.
 - Kapsam: post
+
+## 2026-11-08 · Merkezî planlama, koça danışma yok
+- Neydi: Tatil postundaki çalışma sürelerinin yayından önce koçlara sorulması önerildi.
+- Düzeltme: Kullanıcı şöyle dedi: "Çok fazla öğretmen var, hepsiyle bu kadar iletişime geçemem. Ben takip edeyim, öğretmenleri yönlendireyim. Koçlar görev olarak yapıyor. Planlamayı rehberlik olarak ben yaparım."
+- Kural: Planlar rehberlik biriminden merkezî olarak çıkar. Koçlara onay sorulmaz, hazır ve adım adım yönlendirme gönderilir. Koçtan yorum ya da karar bekleyen bir süreç önerilmez.
+- Kapsam: genel
+
+## 2026-11-08 · Velilerin sevdiği format
+- Neydi: Tek bir genel "tatil planı" carousel'i önerildi.
+- Düzeltme: Kullanıcı kademe bazlı (5, 6, 7… ayrı ayrı), konu bazlı olmayan, saat, miktar ve ders ders "nasıl çalışılır" içeren, şık bir program istedi. Bu program veli WhatsApp gruplarına da gönderilecek. Kullanıcı "Veliler onu seviyor" dedi.
+- Kural: Tatil, sınav dönemi ve karne gibi dönemlerde varsayılan içerik, kademe bazlı rehberlik programıdır (görsel kart + veli grubu mesajı + koç yönlendirmesi). Öğrenci adı ve konu listesi içermez.
+- Kapsam: post | veli mesajı

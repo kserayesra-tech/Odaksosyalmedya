@@ -1,0 +1,333 @@
+{
+ "baslik": "Ara Tatil Çalışma Programı",
+ "tarih": "14-22 Kasım 2026",
+ "gunler": [
+  {
+   "g": "14",
+   "ad": "Cmt",
+   "tip": "dinlen"
+  },
+  {
+   "g": "15",
+   "ad": "Pzr",
+   "tip": "dinlen"
+  },
+  {
+   "g": "16",
+   "ad": "Pzt",
+   "tip": "calis"
+  },
+  {
+   "g": "17",
+   "ad": "Sal",
+   "tip": "calis"
+  },
+  {
+   "g": "18",
+   "ad": "Çar",
+   "tip": "calis"
+  },
+  {
+   "g": "19",
+   "ad": "Per",
+   "tip": "calis"
+  },
+  {
+   "g": "20",
+   "ad": "Cum",
+   "tip": "calis"
+  },
+  {
+   "g": "21",
+   "ad": "Cmt",
+   "tip": "prova"
+  },
+  {
+   "g": "22",
+   "ad": "Pzr",
+   "tip": "hazirlik"
+  }
+ ],
+ "kurallar": [
+  [
+   "İlk 2 gün tam dinlenme",
+   "Yorgun zihin tekrar yapamaz. 14-15 Kasım ders yok."
+  ],
+  [
+   "Her gün aynı saatte, sabah başla",
+   "Saat 10:00 en geç başlangıç. Öğleden sonra serbest."
+  ],
+  [
+   "40 dakika çalış, 10 dakika mola",
+   "Mola ekransız: su, hareket, pencere."
+  ],
+  [
+   "Akşam 5 dakika sohbet",
+   "“Bugün ne öğrendin?” Sorgu değil, merak."
+  ]
+ ],
+ "kademeler": [
+  {
+   "id": "5",
+   "ad": "5. Sınıf",
+   "renk": "#E8735A",
+   "sure": "1-1,5 saat",
+   "blok": "2 blok × 40 dk",
+   "dersler": [
+    [
+     "Matematik",
+     "15 soru",
+     "İşlemi deftere yazarak çözsün. Yanlışı silmesin, yanına doğrusunu yazsın."
+    ],
+    [
+     "Türkçe",
+     "20 dk kitap + 5 paragraf",
+     "Okuduğu sayfayı size 3 cümleyle anlatsın."
+    ],
+    [
+     "Fen Bilimleri",
+     "10 soru · Pzt-Çar-Cum",
+     "Okul defterinden bir konuyu kendi cümleleriyle anlatsın."
+    ],
+    [
+     "Sosyal Bilgiler",
+     "5 kavram kartı · Sal-Per",
+     "Ön yüze kavramı, arka yüze anlamını yazsın."
+    ],
+    [
+     "İngilizce",
+     "5 kelime",
+     "Her kelimeyi bir cümle içinde kullansın."
+    ]
+   ],
+   "ozel": "Cumartesi: Hafta boyunca yanlış yaptığı soruları yeniden çözsün.",
+   "not": "Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar."
+  },
+  {
+   "id": "6",
+   "ad": "6. Sınıf",
+   "renk": "#E9A23B",
+   "sure": "1,5-2 saat",
+   "blok": "3 blok × 35 dk",
+   "dersler": [
+    [
+     "Matematik",
+     "20 soru",
+     "İlk 10'u kolaydan, son 10'u zordan. Yanlışları işaretlesin."
+    ],
+    [
+     "Türkçe",
+     "25 dk kitap + 10 paragraf",
+     "Bilmediği kelimeleri bir deftere yazsın."
+    ],
+    [
+     "Fen Bilimleri",
+     "15 soru",
+     "Bir konuyu şema ya da çizimle tek sayfada özetlesin."
+    ],
+    [
+     "Sosyal Bilgiler",
+     "10 soru · dönüşümlü",
+     "Harita ve zaman çizelgesi üzerinden tekrar etsin."
+    ],
+    [
+     "İngilizce",
+     "8 kelime + 1 diyalog",
+     "Diyaloğu sesli okusun."
+    ]
+   ],
+   "ozel": "Cumartesi: İşaretlediği yanlış sorular + kelime defteri tekrarı.",
+   "not": "Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli."
+  },
+  {
+   "id": "7",
+   "ad": "7. Sınıf",
+   "renk": "#3E9B6B",
+   "sure": "2-2,5 saat",
+   "blok": "3 blok × 40 dk",
+   "dersler": [
+    [
+     "Matematik",
+     "25 soru (10'u yeni nesil)",
+     "Uzun sorularda verilerin altını çizerek okusun."
+    ],
+    [
+     "Türkçe",
+     "15 paragraf + 10 dil bilgisi",
+     "Her gün 30 dk kitap okuması da programda."
+    ],
+    [
+     "Fen Bilimleri",
+     "20 soru",
+     "Yanlış yaptığı konunun özetine dönüp 5 soru daha çözsün."
+    ],
+    [
+     "Sosyal Bilgiler",
+     "15 soru",
+     "Yanlışlarını kısa notlarla deftere geçirsin."
+    ],
+    [
+     "İngilizce",
+     "10 kelime + 5 soru",
+     "Kelimeleri bir önceki günün kelimeleriyle birlikte tekrar etsin."
+    ]
+   ],
+   "ozel": "Cumartesi: 40 soruluk karışık mini deneme, 50 dk süre tutarak.",
+   "not": "7. sınıf LGS'nin provasıdır. Yeni nesil sorudan korkmasın. Doğru sayısından çok denemesi önemli."
+  },
+  {
+   "id": "8",
+   "ad": "8. Sınıf · LGS",
+   "renk": "#0E4D5A",
+   "sure": "3-3,5 saat",
+   "blok": "4 blok × 45 dk",
+   "dersler": [
+    [
+     "Matematik",
+     "30 soru (15'i yeni nesil)",
+     "Yanlışlarını “hata defteri”ne yazsın: soru, hatası, doğrusu."
+    ],
+    [
+     "Türkçe",
+     "20 paragraf + 10 dil bilgisi",
+     "Paragrafta süre tutsun, sözel mantığı atlamasın."
+    ],
+    [
+     "Fen Bilimleri",
+     "25 soru",
+     "İlk 5 soru, önceki günün yanlış yaptığı konudan olsun."
+    ],
+    [
+     "İnkılap Tarihi",
+     "15 soru",
+     "Kronolojiyi tek sayfalık bir zaman çizelgesiyle tekrar etsin."
+    ],
+    [
+     "Din Kültürü · İngilizce",
+     "10 + 10 soru",
+     "İngilizcede günde 10 kelime de eklesin."
+    ]
+   ],
+   "ozel": "21 Kasım Cumartesi 09:30: Evde tam LGS provası, gerçek sürelerle (Sözel 75 dk · mola · Sayısal 80 dk). Tatil sonrası ilk deneme: 29 Kasım Pazar.",
+   "not": "Prova günü evi sınav salonu gibi düşünün: telefon başka odada, ev sessiz. Sonucu yorumlamadan koçuna iletsin."
+  },
+  {
+   "id": "9-10",
+   "ad": "9-10. Sınıf",
+   "renk": "#3A78C2",
+   "sure": "2,5-3 saat",
+   "blok": "4 blok × 40 dk",
+   "dersler": [
+    [
+     "Okul dersleri",
+     "Her gün 2 ders",
+     "Tatil öncesi işlenen konular: defterden özet + 15 soru."
+    ],
+    [
+     "Türkçe (TYT)",
+     "20 paragraf",
+     "Süre tutsun. Hız da bir beceridir, şimdiden çalışılır."
+    ],
+    [
+     "Matematik (TYT)",
+     "20 soru",
+     "Temel işlem ve problem. Yanlışları ertesi gün yeniden çözsün."
+    ],
+    [
+     "Fen (Fizik · Kimya · Biyoloji)",
+     "15 soru · dönüşümlü",
+     "Her gün farklı bir ders."
+    ],
+    [
+     "Tarih · Coğrafya · İngilizce",
+     "15 soru + 10 kelime",
+     "Tarih ve coğrafya dönüşümlü, kelime her gün."
+    ]
+   ],
+   "ozel": "Cumartesi: Haftanın yanlışları + okul yazılılarına hazırlık listesi.",
+   "not": "Lisede okul notu ile sınav hazırlığı birlikte yürür. Programda ikisi de var."
+  },
+  {
+   "id": "11",
+   "ad": "11. Sınıf",
+   "renk": "#7A5AC2",
+   "sure": "3,5-4 saat",
+   "blok": "5 blok × 45 dk",
+   "dersler": [
+    [
+     "Türkçe (TYT)",
+     "25 paragraf",
+     "Süre tutsun, yanlış yaptığı paragraf türünü not etsin."
+    ],
+    [
+     "Matematik (TYT)",
+     "25 soru",
+     "Problemlerde çözüm adımlarını yazarak ilerlesin."
+    ],
+    [
+     "Alan dersi (AYT)",
+     "Her gün 1 ders · 45 dk + 20 soru",
+     "Sayısal: Mat-Fiz-Kim-Biy · Eşit Ağırlık: Mat-Edb-Tar-Coğ, dönüşümlü."
+    ],
+    [
+     "Okul dersleri",
+     "30 dk",
+     "Yaklaşan yazılı sınavların konularını tekrar etsin."
+    ],
+    [
+     "Yanlış tekrarı",
+     "20 dk",
+     "Önceki günün yanlış soruları."
+    ]
+   ],
+   "ozel": "21 Kasım Cumartesi: TYT Türkçe + Matematik branş denemesi, süre tutarak.",
+   "not": "11. sınıf YKS'nin sessiz yılıdır. Bu tatil düzen kurmak için en uygun zaman."
+  },
+  {
+   "id": "12",
+   "ad": "12. Sınıf ve Mezun · YKS",
+   "renk": "#B23A48",
+   "sure": "5-6 saat",
+   "blok": "mezun 7-8 saat · 50+10 dk",
+   "dersler": [
+    [
+     "Türkçe (TYT)",
+     "30 paragraf + 10 dil bilgisi",
+     "Paragrafta soru başı süreyi takip etsin."
+    ],
+    [
+     "Matematik (TYT)",
+     "30 soru + 10 geometri",
+     "Yanlışları hata defterine, çözümüyle birlikte."
+    ],
+    [
+     "Fen · Sosyal (TYT)",
+     "Her gün 1 branş denemesi",
+     "Dönüşümlü: Fizik, Kimya, Biyoloji, Tarih, Coğrafya…"
+    ],
+    [
+     "Alan (AYT)",
+     "Günde 2 ders × 60 dk",
+     "Konu tekrarı + 25 soru. Zayıf derse öncelik."
+    ],
+    [
+     "Yanlış tekrarı",
+     "Her gün 30 dk",
+     "Önceki günün tüm yanlışları yeniden çözülür."
+    ]
+   ],
+   "ozel": "21 Kasım Cumartesi 10:15: Evde tam TYT provası (120 soru · 165 dk). Tatil sonrası ilk deneme: 23 Kasım Pazartesi.",
+   "not": "Uyku saati sabit olsun, en az 7 saat. Gece geç saatte çalışmak verimi düşürür."
+  }
+ ],
+ "ozelgunler": [
+  [
+   "21 Kasım · Prova günü",
+   "Kademenize ait karttaki prova görevi: mini deneme, branş denemesi ya da evde tam deneme."
+  ],
+  [
+   "22 Kasım · Hazırlık günü",
+   "30 dk hafif tekrar, çanta, haftanın planı ve okula göre uyku saatine dönüş."
+  ]
+ ]
+}
