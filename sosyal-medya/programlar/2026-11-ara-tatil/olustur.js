@@ -1,11 +1,17 @@
-// Ara tatil programı görsellerini üretir: node olustur.js
-// Çıktı: gorseller/00-kapak.png, 01-5.png ... (1080x1350, Instagram ve WhatsApp için)
+// Ara tatil programı görsellerini ve çıktılarını üretir.
+//   node olustur.js                      → tüm kademeler, gorseller/
+//   node olustur.js 5,6,7 ortaokul       → sadece 5-6-7, gorseller-ortaokul/ + yazdir-ortaokul/*.pdf (A4)
+// PNG: 1080x1350 (Instagram + WhatsApp). PDF: A4, öğrenciye çıktı (ad-soyad alanlı).
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
 
 const dir = __dirname;
 const p = JSON.parse(fs.readFileSync(path.join(dir, 'program.json'), 'utf8'));
+const filtre = process.argv[2] ? process.argv[2].split(',') : null;
+const ek = process.argv[3] ? '-' + process.argv[3] : '';
+if (filtre) p.kademeler = p.kademeler.filter(k => filtre.includes(k.id));
+const kapakAlt = filtre ? p.kademeler.map(k => k.ad.split(' · ')[0].replace('. Sınıf', '')).join('-') + '. Sınıflar' : 'Ara Tatil';
 const logo = 'data:image/png;base64,' + fs.readFileSync(path.join(dir, '../../../marka/logo/odak-logo.png')).toString('base64');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 
@@ -28,9 +34,10 @@ const ust = (alt) => `
 
 const kapak = `
 <section class="card kapak">
-  ${ust('Ara Tatil')}
+  ${ust(kapakAlt)}
   <h1>Ara Tatil<br>Çalışma Programı</h1>
   <p class="lead">Her kademeye ayrı süre, günlük akış ve ders ders nasıl çalışılacağı. Çocuğunuzun sınıfına ait kartı kaydedin.</p>
+  ${p.dipnot ? `<p class="dipnot">${esc(p.dipnot)}</p>` : ''}
   ${gunSerit('#404F6E')}
   <div class="kurallar">
     ${p.kurallar.map((k, i) => `
@@ -57,7 +64,16 @@ const kart = (k) => `
   <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
   ${gunSerit(k.renk)}
   <div class="not"><b>Velimize not:</b> ${esc(k.not)}</div>
+  ${p.dipnot ? `<div class="dipnot kd">${esc(p.dipnot)}</div>` : ''}
 </section>`;
+
+// A4 çıktı sayfası: kart + öğrenci adı + kısa kurallar
+const a4 = (k) => `
+<div class="a4">
+  <div class="olcek">${kart(k)}</div>
+  <div class="ad"><span>Adım Soyadım: ..................................................</span><span>Koç öğretmenim: ................................</span></div>
+  <div class="kisa">${p.kurallar.map(r => esc(r[0])).join('  ·  ')}</div>
+</div>`;
 
 const html = `<!doctype html><html lang="tr"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -109,6 +125,14 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 .kademeler span{color:#fff;font-weight:700;font-size:20px;padding:9px 18px;border-radius:30px}
 .alt{position:absolute;right:68px;bottom:62px;font-size:20px;font-weight:600;color:var(--gri)}
 .kapak .kademeler{max-width:760px}
+.dipnot{font-size:20px;color:var(--gri);font-style:italic;margin-top:12px}
+.dipnot.kd{font-size:17px;margin-top:10px;text-align:center}
+@page{size:A4;margin:0}
+.a4{width:210mm;height:297mm;padding:10mm 10mm 0;background:#fff;page-break-after:always;overflow:hidden}
+.olcek{width:1080px;height:1350px;transform:scale(.66);transform-origin:top left;margin-bottom:calc(-1350px * .34)}
+.olcek .card{margin:0;border-radius:18px}
+.ad{display:flex;justify-content:space-between;font-size:15px;color:#2C3650;margin-top:7mm}
+.kisa{margin-top:5mm;font-size:12.5px;color:#5B6B70;text-align:center}
 .ogun{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .ogun div{border:2px dashed var(--petrol);border-radius:18px;padding:18px 22px}
 .ogun b{display:block;font-size:20px;color:var(--petrol);letter-spacing:.5px}
@@ -117,9 +141,10 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 ${kapak}
 ${p.kademeler.map(kart).join('\n')}
 </body></html>`;
+const htmlA4 = (k) => html.replace(/<body>[\s\S]*<\/body>/, `<body style="background:#fff">${a4(k)}</body>`);
 
 (async () => {
-  const out = path.join(dir, 'gorseller');
+  const out = path.join(dir, 'gorseller' + ek);
   fs.mkdirSync(out, { recursive: true });
   fs.writeFileSync(path.join(dir, 'onizleme.html'), html);
   const browser = await chromium.launch();
@@ -133,6 +158,17 @@ ${p.kademeler.map(kart).join('\n')}
   for (let i = 0; i < cards.length; i++) {
     if (tasma[i]) console.warn('UYARI: taşma var →', names[i]);
     await cards[i].screenshot({ path: path.join(out, names[i] + '.png') });
+  }
+  if (filtre) {
+    const yaz = path.join(dir, 'yazdir' + ek);
+    fs.mkdirSync(yaz, { recursive: true });
+    for (const k of p.kademeler) {
+      const pg = await browser.newPage({ viewport: { width: 794, height: 1123 } });
+      await pg.setContent(htmlA4(k), { waitUntil: 'networkidle' });
+      await pg.evaluate(() => document.fonts.ready);
+      await pg.pdf({ path: path.join(yaz, `${k.id}-sinif.pdf`), format: 'A4', printBackground: true });
+      await pg.close();
+    }
   }
   await browser.close();
   console.log('Üretildi:', names.join(', '));

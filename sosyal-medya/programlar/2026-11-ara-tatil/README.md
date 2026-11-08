@@ -7,26 +7,49 @@ miktar ve her dersin nasıl çalışılacağını içerir.
 - Görseller: `node olustur.js` → `gorseller/*.png` (1080×1350, Instagram ve WhatsApp için)
 - Kartlar: `00-kapak`, `01-5`, `02-6`, `03-7`, `04-8` (LGS), `05-9-10`, `06-11`, `07-12` (12 ve mezun)
 
-## Dağıtım planı
+## Durum (2026-11-08)
+| Kademe | Durum |
+|---|---|
+| 5, 6, 7 | ✅ Kesinleşti. Görseller `gorseller-ortaokul/`, A4 çıktılar `yazdir-ortaokul/` |
+| 8 (LGS), 12 / mezun | ⏸ Kurum tatilde açık olacak. Program kurumun tatil takvimine göre yeniden yazılacak |
+| 9-10, 11 | ❓ Kurumun bu kademeler için tatilde açık olup olmadığı netleşmedi |
+
+Yeniden üretmek için: `node olustur.js 5,6,7 ortaokul`
+
+## Dağıtım planı (ortaokul)
 | Ne zaman | Kanal | Ne |
 |---|---|---|
-| Per 12 Kas 18:00 | Koç grubu | Koçlara yönlendirme mesajı (aşağıda) |
-| Per 12 Kas 20:30 | Her veli WhatsApp grubu | Kapak + **o grubun** kademe kartı + mesaj |
-| Per 12 Kas 21:00 | Instagram | Carousel: 8 kartın tamamı |
+| Per 12 Kas sabah | Fotokopi | A4 çıktılar: 5. sınıf 8 · 6. sınıf 26 · 7. sınıf 60 adet (öğrenci sayısı + %10 yedek). Renkli tercih edilir, siyah-beyaz da okunur |
+| Per 12 Kas 18:00 | Koç grubu (5-6-7 koçları) | Yönlendirme mesajı + PDF'ler |
+| Cum 13 Kas, son ders | Sınıfta | Koç çıktıyı dağıtır, 2 dakikada tanıtır, öğrenci adını yazar |
+| Cum 13 Kas 19:00 | 5-6-7 veli WhatsApp grupları | Kapak + o grubun kademe kartı + bilgilendirme mesajı |
+| Cum 13 Kas 20:30 | Instagram | Carousel: ortaokul kapak + 5, 6, 7 kartları |
 | Pzt 23 Kas | Koçluk raporu | Takip çizelgesi kontrolü ("Çizelge getirdi mi?") |
 
-## Veli grubu mesajı (grup adına göre kademe kartını ekleyin)
-> Değerli velilerimiz,
-> 14-22 Kasım ara tatili için rehberlik birimimiz olarak **{kademe}** öğrencilerimize özel bir çalışma programı hazırladık. 📌
-> Program 2 gün dinlenmeyle başlıyor, ardından her gün sabah saatlerinde kısa ve planlı çalışmayla devam ediyor.
-> Kartın altındaki takip çizelgesinde çocuğunuz tamamladığı günleri işaretlesin. Tatil dönüşü koç öğretmenimiz çizelgeyi birlikte kontrol edecek.
-> İyi tatiller dileriz. Odak Eğitim Rehberlik Birimi
+> Neden veliye Cuma günü gönderiliyor? Çocuk çıktıyı elinde getirdiği akşam veliye de ulaşırsa ikisi aynı şeyi görür.
+> Perşembe gönderilirse veli sorduğunda çocuk "daha almadık" der.
 
-## Koç grubu mesajı (yönlendirme, onay istemez)
+## Veli grubu mesajı (öneri tonu)
+> Değerli velilerimiz, merhaba 🌿
+> 14-22 Kasım ara tatili için rehberlik birimimiz olarak **{5./6./7.} sınıf** öğrencilerimize yönelik bir çalışma programı **önerisi** hazırladık. Görseli ekte bulabilirsiniz. Çocuklarımıza bugün basılı hâlini de verdik.
+> Bu program bir zorunluluk değil, bir yol haritasıdır. Tatilin ilk iki günü tamamen dinlenmeye ayrıldı. Sonraki günlerde her sabah düzenli bir saatte başlayıp kısa molalarla ilerlemek yeterli. Programı çocuğunuzun temposuna göre esnetebilirsiniz. Önemli olan her gün biraz, ama düzenli çalışması.
+> Koç öğretmenimizin verdiği tatil ödevleri varsa önce onlar tamamlanmalı. Program, kalan zaman için bir öneri niteliğinde.
+> Kâğıdın altındaki takip çizelgesini çocuğunuz kendisi işaretlerse çok güzel olur. Tatil dönüşü koç öğretmenimizle birlikte bakacağız.
+> Hepinize keyifli ve dinlendirici bir tatil dileriz.
+> Odak Eğitim Rehberlik Birimi
+
+## Koç grubu mesajı (5-6-7 koçları · yönlendirme, onay istemez)
 > Değerli hocalarım,
-> Ara tatil için rehberlik birimi olarak kademe bazlı bir çalışma programı hazırladık. Bu akşam veli gruplarına ve Instagram'a paylaşılacak. Görseller ektedir.
-> Sizden ricam şu üç adım:
-> 1. Cuma son dersinizde programı öğrencilerinize 2 dakikada tanıtın: kartın altındaki takip çizelgesini göstermeniz yeterli.
-> 2. Öğrenciye özel bir değişiklik gerekiyorsa (ör. eksik konu) bunu kartın üzerine ekleyin. Programın geri kalanı aynen uygulanır.
-> 3. Tatil dönüşü ilk raporda (23-29 Kas sekmesi) "Çizelge getirdi mi?" sütununa **tatil çizelgesini** girin.
+> Ara tatil için 5, 6 ve 7. sınıflara yönelik çalışma programı önerimiz hazır. PDF'ler ekte, çıktılar Perşembe öğleden sonra sınıf sınıf ayrılmış olacak.
+> Sizden ricam:
+> 1. **Cuma son dersinizde** çıktıları dağıtın. Öğrenciler adlarını yazsın, takip çizelgesini 2 dakikada gösterin.
+> 2. Kendi verdiğiniz tatil ödevi varsa öğrencilere "önce benim ödevim, kalan zamanda bu program" deyin. Program öneri niteliğinde.
+> 3. Tatil dönüşü ilk raporda (**23-29 Kas** sekmesi) "Çizelge getirdi mi?" sütununa tatil çizelgesini girin.
 > Teşekkürler 🙏 Rehberlik Birimi
+
+## Instagram caption (ortaokul)
+> Ara tatil yaklaşırken 5, 6 ve 7. sınıf öğrencilerimiz için bir çalışma programı önerisi hazırladık. 📌
+> İlk 2 gün tam dinlenme, sonrasında her sabah düzenli, kısa ve planlı çalışma. Kartlarda süre, günlük soru miktarı ve her dersin nasıl çalışılacağı yer alıyor.
+> Zorunlu değil, bir yol haritası. Çocuğunuzun temposuna göre uyarlayabilirsiniz.
+> Kaydedin, tatil boyunca buzdolabına asın. 🙂
+> #OdakEğitim #veliköşesi #aratatil #ortaokul #rehberlik

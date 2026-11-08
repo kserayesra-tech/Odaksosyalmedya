@@ -44,3 +44,15 @@ Biçim:
 - Düzeltme: Kullanıcı "Çok az, biz çocuklara çok daha fazla ödev veriyoruz. Eksik gibi olur." dedi.
 - Kural: Çalışma programlarında soru miktarları piyasa aralığının **üst bandından** seçilir (ör. LGS günde ~240, 5. sınıf ~100). Tatil, kamp gibi değerlendirilir. Kurumun gerçek ödev verisi (rapordaki V satırı) oluştukça sayılar o veriye göre kalibre edilir.
 - Kapsam: post | koçluk
+
+## 2026-11-08 · Programlar zorunluluk değil, öneri
+- Neydi: Program kartları ve mesajlar emir kipinde, "uygulanacak program" tonundaydı.
+- Düzeltme: Kullanıcı "Tamamen öneri, illa bu şekilde çalışmak zorunda değiller" dedi.
+- Kural: Rehberlik programları veliye ve öğrenciye **öneri / yol haritası** olarak sunulur. Koçun verdiği ödev önceliklidir ve bu her kartta dipnot olarak yazılır. Veli mesajında "çocuğunuzun temposuna göre esnetebilirsiniz" vurgusu yer alır.
+- Kapsam: post | veli mesajı
+
+## 2026-11-08 · Basılı çıktı + dağıtım sırası
+- Neydi: Program sadece dijital olarak (WhatsApp ve Instagram) planlanmıştı.
+- Düzeltme: Kullanıcı öğrencilere çıktı olarak da verilmesini önerdi.
+- Kural: Ortaokul programları A4 çıktı olarak da hazırlanır (ad-soyad ve takip çizelgesi alanlı). Önce öğrenciye çıktı verilir, aynı akşam veli grubuna mesaj gider.
+- Kapsam: genel
