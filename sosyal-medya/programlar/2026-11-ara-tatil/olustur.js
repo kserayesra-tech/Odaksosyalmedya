@@ -6,6 +6,7 @@ const { chromium } = require('playwright');
 
 const dir = __dirname;
 const p = JSON.parse(fs.readFileSync(path.join(dir, 'program.json'), 'utf8'));
+const logo = 'data:image/png;base64,' + fs.readFileSync(path.join(dir, '../../../marka/logo/odak-logo.png')).toString('base64');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 
 const gunEtiket = { dinlen: 'Dinlenme', calis: 'Çalışma', prova: 'Prova', hazirlik: 'Hazırlık' };
@@ -20,7 +21,7 @@ const gunSerit = (renk) => `
 
 const ust = (alt) => `
   <div class="ust">
-    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="marka"><img src="${logo}" alt="Odak Eğitim"><span>Rehberlik Birimi</span></div>
     <div class="tarih">${esc(p.tarih)}</div>
   </div>
   <div class="altbaslik">${alt}</div>`;
@@ -30,7 +31,7 @@ const kapak = `
   ${ust('Ara Tatil')}
   <h1>Ara Tatil<br>Çalışma Programı</h1>
   <p class="lead">Her kademeye ayrı süre, günlük akış ve ders ders nasıl çalışılacağı. Çocuğunuzun sınıfına ait kartı kaydedin.</p>
-  ${gunSerit('#0E4D5A')}
+  ${gunSerit('#404F6E')}
   <div class="kurallar">
     ${p.kurallar.map((k, i) => `
       <div class="kural"><div class="kno">${i + 1}</div>
@@ -61,16 +62,16 @@ const kart = (k) => `
 const html = `<!doctype html><html lang="tr"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--petrol:#0E4D5A;--koyu:#0A3540;--krem:#FBF7F0;--metin:#1E2A2E;--gri:#5B6B70;--cizgi:#E6DED0}
+:root{--petrol:#404F6E;--koyu:#2C3650;--turuncu:#E54F37;--krem:#FBF7F0;--metin:#1E2A2E;--gri:#5B6B70;--cizgi:#E6DED0}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#ccc;font-family:Inter,sans-serif;color:var(--metin)}
 .card{width:1080px;height:1350px;background:var(--krem);padding:64px 68px 56px;position:relative;overflow:hidden;
   display:flex;flex-direction:column;margin-bottom:20px;--k:var(--petrol)}
 .card::before{content:"";position:absolute;right:-180px;top:-180px;width:460px;height:460px;border-radius:50%;background:var(--k);opacity:.10}
 .ust{display:flex;justify-content:space-between;align-items:flex-start}
-.marka{font-family:Nunito;font-weight:900;font-size:30px;letter-spacing:2px;color:var(--petrol)}
+.marka img{display:block;height:58px}
 .marka span{display:block;font-family:Inter;font-weight:500;font-size:20px;letter-spacing:0;color:var(--gri);margin-top:2px}
-.tarih{background:var(--petrol);color:#fff;font-weight:600;font-size:22px;padding:10px 20px;border-radius:40px}
+.tarih{background:var(--turuncu);color:#fff;font-weight:600;font-size:22px;padding:10px 20px;border-radius:40px}
 .altbaslik{margin-top:26px;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--k)}
 h1{font-family:Nunito;font-weight:900;font-size:92px;line-height:1.02;color:var(--koyu);margin-top:10px}
 .lead{font-size:28px;line-height:1.4;color:var(--gri);margin-top:22px;max-width:860px}
@@ -98,7 +99,7 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 .gtip{font-size:13px;font-weight:600;margin-top:4px;opacity:.85}
 .kutu{width:24px;height:24px;border:2px solid currentColor;border-radius:6px;margin:8px auto 0;opacity:.6}
 .gun.dinlen .kutu{visibility:hidden}
-.not{margin-top:20px;font-size:21px;line-height:1.4;color:var(--koyu);background:rgba(14,77,90,.07);border-radius:14px;padding:16px 20px}
+.not{margin-top:20px;font-size:21px;line-height:1.4;color:var(--koyu);background:rgba(64,79,110,.08);border-radius:14px;padding:16px 20px}
 .kurallar{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .kural{display:flex;gap:16px;background:#fff;border-radius:18px;padding:22px}
 .kno{flex:none;width:46px;height:46px;border-radius:50%;background:var(--petrol);color:#fff;font-family:Nunito;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center}

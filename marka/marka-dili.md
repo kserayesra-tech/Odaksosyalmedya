@@ -28,6 +28,8 @@ Farkımız şu: ödev, deneme, devam ve veli görüşmesi her hafta ölçülür;
 | "Bilgi için DM / profildeki link" | "SON GÜN!!!" tarzı baskı |
 
 ## Görsel
+- **Logo:** `marka/logo/odak-logo.png` (şeffaf arka planlı). Her görselin sol üst köşesinde yer alır.
+- **Kurum renkleri:** Turuncu `#E54F37` (vurgu, tarih etiketi) · Lacivert `#404F6E` (ana renk, başlık) · Koyu lacivert `#2C3650` (metin) · Krem `#FBF7F0` (zemin).
 - Az metin: kapakta en fazla 7 kelime.
 - Carousel: en fazla 7 kart (rehberlik programı postlarında kapak + kademe sayısı kadar olabilir). 1. kart soru ya da vaat, son kart özet ve kaydetme çağrısı.
 - Emoji: caption'da en fazla 3 tane, kapakta hiç kullanılmaz.
