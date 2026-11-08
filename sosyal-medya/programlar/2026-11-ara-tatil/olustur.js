@@ -73,7 +73,7 @@ body{background:#ccc;font-family:Inter,sans-serif;color:var(--metin)}
 .marka span{display:block;font-family:Inter;font-weight:500;font-size:20px;letter-spacing:0;color:var(--gri);margin-top:2px}
 .tarih{background:var(--turuncu);color:#fff;font-weight:600;font-size:22px;padding:10px 20px;border-radius:40px}
 .altbaslik{margin-top:26px;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--k)}
-h1{font-family:Nunito;font-weight:900;font-size:92px;line-height:1.02;color:var(--koyu);margin-top:10px}
+h1{font-family:Nunito;font-weight:900;font-size:80px;line-height:1.02;color:var(--koyu);margin-top:10px}
 .lead{font-size:28px;line-height:1.4;color:var(--gri);margin-top:22px;max-width:860px}
 .kbas{display:flex;justify-content:space-between;align-items:flex-end;margin-top:6px;padding-bottom:22px;border-bottom:4px solid var(--k)}
 h2{font-family:Nunito;font-weight:900;font-size:64px;line-height:1.05;color:var(--k);max-width:560px}
@@ -89,7 +89,7 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 .ozel b{display:block;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--k);margin-bottom:4px}
 .takip{margin-top:auto;font-size:18px;font-weight:600;color:var(--gri);margin-bottom:10px}
 .serit{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}
-.kapak .serit{margin-top:34px}
+.kapak .serit{margin-top:26px}
 .gun{background:#fff;border-radius:14px;padding:10px 4px 12px;text-align:center;border:2px solid var(--cizgi)}
 .gun.calis{border-color:var(--k)}
 .gun.prova{background:var(--k);color:#fff;border-color:var(--k)}
@@ -100,7 +100,7 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 .kutu{width:24px;height:24px;border:2px solid currentColor;border-radius:6px;margin:8px auto 0;opacity:.6}
 .gun.dinlen .kutu{visibility:hidden}
 .not{margin-top:20px;font-size:21px;line-height:1.4;color:var(--koyu);background:rgba(64,79,110,.08);border-radius:14px;padding:16px 20px}
-.kurallar{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.kurallar{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .kural{display:flex;gap:16px;background:#fff;border-radius:18px;padding:22px}
 .kno{flex:none;width:46px;height:46px;border-radius:50%;background:var(--petrol);color:#fff;font-family:Nunito;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center}
 .kural b{display:block;font-size:24px;color:var(--koyu);line-height:1.25}
