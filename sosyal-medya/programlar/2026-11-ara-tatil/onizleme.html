@@ -1,0 +1,541 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--petrol:#0E4D5A;--koyu:#0A3540;--krem:#FBF7F0;--metin:#1E2A2E;--gri:#5B6B70;--cizgi:#E6DED0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ccc;font-family:Inter,sans-serif;color:var(--metin)}
+.card{width:1080px;height:1350px;background:var(--krem);padding:64px 68px 56px;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;margin-bottom:20px;--k:var(--petrol)}
+.card::before{content:"";position:absolute;right:-180px;top:-180px;width:460px;height:460px;border-radius:50%;background:var(--k);opacity:.10}
+.ust{display:flex;justify-content:space-between;align-items:flex-start}
+.marka{font-family:Nunito;font-weight:900;font-size:30px;letter-spacing:2px;color:var(--petrol)}
+.marka span{display:block;font-family:Inter;font-weight:500;font-size:20px;letter-spacing:0;color:var(--gri);margin-top:2px}
+.tarih{background:var(--petrol);color:#fff;font-weight:600;font-size:22px;padding:10px 20px;border-radius:40px}
+.altbaslik{margin-top:26px;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--k)}
+h1{font-family:Nunito;font-weight:900;font-size:92px;line-height:1.02;color:var(--koyu);margin-top:10px}
+.lead{font-size:28px;line-height:1.4;color:var(--gri);margin-top:22px;max-width:860px}
+.kbas{display:flex;justify-content:space-between;align-items:flex-end;margin-top:6px;padding-bottom:22px;border-bottom:4px solid var(--k)}
+h2{font-family:Nunito;font-weight:900;font-size:64px;line-height:1.05;color:var(--k);max-width:560px}
+.sure{text-align:right}
+.sure b{display:block;font-family:Nunito;font-weight:900;font-size:40px;color:var(--koyu)}
+.sure span{font-size:20px;color:var(--gri)}
+table{width:100%;border-collapse:collapse;margin-top:18px}
+th{text-align:left;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gri);font-weight:600;padding:6px 10px 10px}
+td{font-size:22px;line-height:1.32;padding:15px 10px;border-top:1px solid var(--cizgi);vertical-align:top}
+td.ders{font-weight:700;width:225px;color:var(--koyu)}
+td.mik{font-weight:600;width:235px;color:var(--k)}
+.ozel{margin-top:16px;background:#fff;border-left:8px solid var(--k);border-radius:14px;padding:18px 22px;font-size:22px;line-height:1.38}
+.ozel b{display:block;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--k);margin-bottom:4px}
+.takip{margin-top:auto;font-size:18px;font-weight:600;color:var(--gri);margin-bottom:10px}
+.serit{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}
+.kapak .serit{margin-top:34px}
+.gun{background:#fff;border-radius:14px;padding:10px 4px 12px;text-align:center;border:2px solid var(--cizgi)}
+.gun.calis{border-color:var(--k)}
+.gun.prova{background:var(--k);color:#fff;border-color:var(--k)}
+.gun.dinlen{background:#EEF4F1}
+.gno{font-family:Nunito;font-weight:900;font-size:30px;line-height:1}
+.gad{font-size:15px;font-weight:600;opacity:.75}
+.gtip{font-size:13px;font-weight:600;margin-top:4px;opacity:.85}
+.kutu{width:24px;height:24px;border:2px solid currentColor;border-radius:6px;margin:8px auto 0;opacity:.6}
+.gun.dinlen .kutu{visibility:hidden}
+.not{margin-top:20px;font-size:21px;line-height:1.4;color:var(--koyu);background:rgba(14,77,90,.07);border-radius:14px;padding:16px 20px}
+.kurallar{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.kural{display:flex;gap:16px;background:#fff;border-radius:18px;padding:22px}
+.kno{flex:none;width:46px;height:46px;border-radius:50%;background:var(--petrol);color:#fff;font-family:Nunito;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center}
+.kural b{display:block;font-size:24px;color:var(--koyu);line-height:1.25}
+.kural span{display:block;font-size:20px;color:var(--gri);margin-top:6px;line-height:1.35}
+.kademeler{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px}
+.kademeler span{color:#fff;font-weight:700;font-size:20px;padding:9px 18px;border-radius:30px}
+.alt{position:absolute;right:68px;bottom:62px;font-size:20px;font-weight:600;color:var(--gri)}
+.kapak .kademeler{max-width:760px}
+.ogun{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ogun div{border:2px dashed var(--petrol);border-radius:18px;padding:18px 22px}
+.ogun b{display:block;font-size:20px;color:var(--petrol);letter-spacing:.5px}
+.ogun span{display:block;font-size:19px;color:var(--gri);margin-top:6px;line-height:1.35}
+</style></head><body>
+
+<section class="card kapak">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil</div>
+  <h1>Ara Tatil<br>Çalışma Programı</h1>
+  <p class="lead">Her kademeye ayrı süre, günlük akış ve ders ders nasıl çalışılacağı. Çocuğunuzun sınıfına ait kartı kaydedin.</p>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#0E4D5A">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#0E4D5A">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#0E4D5A">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#0E4D5A">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="kurallar">
+    
+      <div class="kural"><div class="kno">1</div>
+      <div><b>İlk 2 gün tam dinlenme</b><span>Yorgun zihin tekrar yapamaz. 14-15 Kasım ders yok.</span></div></div>
+      <div class="kural"><div class="kno">2</div>
+      <div><b>Her gün aynı saatte, sabah başla</b><span>En geç 09:30'da masada. Akşam 20:00'den sonra ders yok.</span></div></div>
+      <div class="kural"><div class="kno">3</div>
+      <div><b>40-45 dakika çalış, 10 dakika mola</b><span>Mola ekransız: su, hareket, pencere. Öğlen 1 saat ara.</span></div></div>
+      <div class="kural"><div class="kno">4</div>
+      <div><b>Akşam 5 dakika sohbet</b><span>“Bugün ne öğrendin?” Sorgu değil, merak.</span></div></div>
+  </div>
+  <div class="ogun"><div><b>21 Kasım · Prova günü</b><span>Kademenize ait karttaki prova görevi: mini deneme, branş denemesi ya da evde tam deneme.</span></div><div><b>22 Kasım · Hazırlık günü</b><span>30 dk hafif tekrar, çanta, haftanın planı ve okula göre uyku saatine dönüş.</span></div></div>
+  <div class="kademeler"><span style="background:#E8735A">5. Sınıf</span><span style="background:#E9A23B">6. Sınıf</span><span style="background:#3E9B6B">7. Sınıf</span><span style="background:#0E4D5A">8. Sınıf</span><span style="background:#3A78C2">9-10. Sınıf</span><span style="background:#7A5AC2">11. Sınıf</span><span style="background:#B23A48">12. Sınıf ve Mezun</span></div>
+  <div class="alt">Kartları kaydırın →</div>
+</section>
+
+<section class="card" style="--k:#E8735A">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>5. Sınıf</h2>
+    <div class="sure"><b>2-2,5 saat</b><span>günde · 3 blok × 40 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Matematik</td><td class="mik">30 soru</td><td>İşlemi deftere yazarak çözsün. Yanlışı silmesin, yanına doğrusunu yazsın.</td></tr><tr><td class="ders">Türkçe</td><td class="mik">20 paragraf + 10 dil bilgisi</td><td>Ayrıca 30 dk kitap. Okuduğunu size 3 cümleyle anlatsın.</td></tr><tr><td class="ders">Fen Bilimleri</td><td class="mik">20 soru</td><td>Okul defterinden bir konuyu kendi cümleleriyle anlatsın.</td></tr><tr><td class="ders">Sosyal Bilgiler</td><td class="mik">15 soru</td><td>Bilmediği kavramları kavram kartına yazsın.</td></tr><tr><td class="ders">İngilizce</td><td class="mik">10 kelime + 10 soru</td><td>Her kelimeyi bir cümle içinde kullansın.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>Cumartesi: 50 soruluk karışık mini deneme + haftanın yanlışları.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#E8735A">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#E8735A">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E8735A">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E8735A">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E8735A">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E8735A">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E8735A">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#E8735A">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#E8735A">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar.</div>
+</section>
+
+<section class="card" style="--k:#E9A23B">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>6. Sınıf</h2>
+    <div class="sure"><b>2,5-3 saat</b><span>günde · 4 blok × 40 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Matematik</td><td class="mik">40 soru</td><td>İlk 20'si kolaydan, son 20'si zordan. Yanlışları işaretlesin.</td></tr><tr><td class="ders">Türkçe</td><td class="mik">25 paragraf + 15 dil bilgisi</td><td>Ayrıca 30 dk kitap. Bilmediği kelimeleri deftere yazsın.</td></tr><tr><td class="ders">Fen Bilimleri</td><td class="mik">25 soru</td><td>Bir konuyu şema ya da çizimle tek sayfada özetlesin.</td></tr><tr><td class="ders">Sosyal Bilgiler</td><td class="mik">20 soru</td><td>Harita ve zaman çizelgesi üzerinden tekrar etsin.</td></tr><tr><td class="ders">İngilizce</td><td class="mik">15 kelime + 10 soru</td><td>Kısa bir diyaloğu sesli okusun.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>Cumartesi: 60 soruluk karışık mini deneme, 70 dk süre tutarak.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#E9A23B">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#E9A23B">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E9A23B">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E9A23B">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E9A23B">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E9A23B">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#E9A23B">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#E9A23B">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#E9A23B">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli.</div>
+</section>
+
+<section class="card" style="--k:#3E9B6B">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>7. Sınıf</h2>
+    <div class="sure"><b>3-3,5 saat</b><span>günde · 5 blok × 40 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Matematik</td><td class="mik">50 soru (20'si yeni nesil)</td><td>Uzun sorularda verilerin altını çizerek okusun.</td></tr><tr><td class="ders">Türkçe</td><td class="mik">30 paragraf + 20 dil bilgisi</td><td>Ayrıca 30 dk kitap. Paragrafta süre tutsun.</td></tr><tr><td class="ders">Fen Bilimleri</td><td class="mik">35 soru</td><td>Yanlış yaptığı konunun özetine dönüp 5 soru daha çözsün.</td></tr><tr><td class="ders">Sosyal Bilgiler</td><td class="mik">25 soru</td><td>Yanlışlarını kısa notlarla deftere geçirsin.</td></tr><tr><td class="ders">İngilizce</td><td class="mik">20 soru + 15 kelime</td><td>Kelimeleri önceki günlerinkilerle birlikte tekrar etsin.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>Cumartesi: 90 soruluk karışık deneme, 100 dk süre tutarak.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#3E9B6B">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#3E9B6B">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3E9B6B">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3E9B6B">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3E9B6B">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3E9B6B">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3E9B6B">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#3E9B6B">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#3E9B6B">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> 7. sınıf LGS'nin provasıdır. Yeni nesil sorudan korkmasın. Doğru sayısından çok denemesi önemli.</div>
+</section>
+
+<section class="card" style="--k:#0E4D5A">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>8. Sınıf · LGS</h2>
+    <div class="sure"><b>5-6 saat</b><span>günde · 7 blok × 45 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Matematik</td><td class="mik">60 soru (30'u yeni nesil)</td><td>Yanlışlarını “hata defteri”ne yazsın: soru, hatası, doğrusu.</td></tr><tr><td class="ders">Türkçe</td><td class="mik">40 paragraf + 20 dil bilgisi</td><td>Paragrafta süre tutsun, sözel mantığı atlamasın.</td></tr><tr><td class="ders">Fen Bilimleri</td><td class="mik">50 soru</td><td>İlk 10 soru, önceki günün yanlış yaptığı konudan olsun.</td></tr><tr><td class="ders">İnkılap Tarihi</td><td class="mik">30 soru</td><td>Kronolojiyi tek sayfalık bir zaman çizelgesiyle tekrar etsin.</td></tr><tr><td class="ders">Din Kültürü · İngilizce</td><td class="mik">20 + 20 soru</td><td>İngilizcede günde 15 kelime de eklesin.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>21 Kasım Cumartesi 09:30: Evde tam LGS provası, gerçek sürelerle (Sözel 75 dk · mola · Sayısal 80 dk). Tatil sonrası ilk deneme: 29 Kasım Pazar.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#0E4D5A">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#0E4D5A">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#0E4D5A">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#0E4D5A">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#0E4D5A">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> Prova günü evi sınav salonu gibi düşünün: telefon başka odada, ev sessiz. Sonucu yorumlamadan koçuna iletsin.</div>
+</section>
+
+<section class="card" style="--k:#3A78C2">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>9-10. Sınıf</h2>
+    <div class="sure"><b>4-5 saat</b><span>günde · 6 blok × 45 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Okul dersleri</td><td class="mik">2 ders × 30 soru</td><td>Tatil öncesi işlenen konular: defterden özet + soru.</td></tr><tr><td class="ders">Türkçe (TYT)</td><td class="mik">40 paragraf</td><td>Süre tutsun. Hız da bir beceridir, şimdiden çalışılır.</td></tr><tr><td class="ders">Matematik (TYT)</td><td class="mik">40 soru</td><td>Temel işlem ve problem. Yanlışları ertesi gün yeniden çözsün.</td></tr><tr><td class="ders">Fen (Fizik · Kimya · Biyoloji)</td><td class="mik">30 soru · dönüşümlü</td><td>Her gün farklı bir ders.</td></tr><tr><td class="ders">Tarih · Coğrafya · İngilizce</td><td class="mik">30 soru + 15 kelime</td><td>Tarih ve coğrafya dönüşümlü, kelime her gün.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>Cumartesi: TYT Türkçe + Matematik branş denemesi, süre tutarak.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#3A78C2">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#3A78C2">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3A78C2">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3A78C2">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3A78C2">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3A78C2">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#3A78C2">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#3A78C2">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#3A78C2">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> Lisede okul notu ile sınav hazırlığı birlikte yürür. Programda ikisi de var.</div>
+</section>
+
+<section class="card" style="--k:#7A5AC2">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>11. Sınıf</h2>
+    <div class="sure"><b>5-6 saat</b><span>günde · 7 blok × 45 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Türkçe (TYT)</td><td class="mik">40 paragraf + 10 dil bilgisi</td><td>Süre tutsun, yanlış yaptığı paragraf türünü not etsin.</td></tr><tr><td class="ders">Matematik (TYT)</td><td class="mik">50 soru</td><td>Problemlerde çözüm adımlarını yazarak ilerlesin.</td></tr><tr><td class="ders">Alan dersi (AYT)</td><td class="mik">2 ders × 30 soru + konu tekrarı</td><td>Sayısal: Mat-Fiz-Kim-Biy · Eşit Ağırlık: Mat-Edb-Tar-Coğ, dönüşümlü.</td></tr><tr><td class="ders">Fen · Sosyal (TYT)</td><td class="mik">30 soru · dönüşümlü</td><td>Her gün farklı bir ders.</td></tr><tr><td class="ders">Okul · Yanlış tekrarı</td><td class="mik">30 + 30 dk</td><td>Yazılı konuları ve önceki günün yanlışları.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>21 Kasım Cumartesi 10:15: Evde tam TYT provası (120 soru · 165 dk).</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#7A5AC2">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#7A5AC2">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#7A5AC2">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#7A5AC2">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#7A5AC2">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#7A5AC2">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#7A5AC2">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#7A5AC2">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#7A5AC2">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> 11. sınıf YKS'nin sessiz yılıdır. Bu tatil düzen kurmak için en uygun zaman.</div>
+</section>
+
+<section class="card" style="--k:#B23A48">
+  
+  <div class="ust">
+    <div class="marka">ODAK EĞİTİM<span>Rehberlik Birimi</span></div>
+    <div class="tarih">14-22 Kasım 2026</div>
+  </div>
+  <div class="altbaslik">Ara Tatil Çalışma Programı</div>
+  <div class="kbas">
+    <h2>12. Sınıf ve Mezun · YKS</h2>
+    <div class="sure"><b>7-8 saat</b><span>günde · mezun 8-9 saat · 50+10 dk</span></div>
+  </div>
+  <table>
+    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><td class="ders">Türkçe (TYT)</td><td class="mik">60 paragraf + 20 dil bilgisi</td><td>Paragrafta soru başı süreyi takip etsin.</td></tr><tr><td class="ders">Matematik (TYT)</td><td class="mik">60 soru + 20 geometri</td><td>Yanlışları hata defterine, çözümüyle birlikte.</td></tr><tr><td class="ders">Fen · Sosyal (TYT)</td><td class="mik">Her gün 2 branş denemesi</td><td>Dönüşümlü: Fizik, Kimya, Biyoloji, Tarih, Coğrafya…</td></tr><tr><td class="ders">Alan (AYT)</td><td class="mik">2 ders × 50 soru</td><td>Konu tekrarı + soru. Zayıf derse öncelik.</td></tr><tr><td class="ders">Yanlış tekrarı</td><td class="mik">Her gün 45 dk</td><td>Önceki günün tüm yanlışları yeniden çözülür.</td></tr>
+  </table>
+  <div class="ozel"><b>Prova günü</b>21 Kasım Cumartesi 10:15: Evde tam TYT provası (120 soru · 165 dk). Tatil sonrası ilk deneme: 23 Kasım Pazartesi.</div>
+  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  
+  <div class="serit">
+    
+      <div class="gun dinlen" style="--k:#B23A48">
+        <div class="gno">14</div><div class="gad">Cmt</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun dinlen" style="--k:#B23A48">
+        <div class="gno">15</div><div class="gad">Pzr</div>
+        <div class="gtip">Dinlenme</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#B23A48">
+        <div class="gno">16</div><div class="gad">Pzt</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#B23A48">
+        <div class="gno">17</div><div class="gad">Sal</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#B23A48">
+        <div class="gno">18</div><div class="gad">Çar</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#B23A48">
+        <div class="gno">19</div><div class="gad">Per</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun calis" style="--k:#B23A48">
+        <div class="gno">20</div><div class="gad">Cum</div>
+        <div class="gtip">Çalışma</div><div class="kutu"></div>
+      </div>
+      <div class="gun prova" style="--k:#B23A48">
+        <div class="gno">21</div><div class="gad">Cmt</div>
+        <div class="gtip">Prova</div><div class="kutu"></div>
+      </div>
+      <div class="gun hazirlik" style="--k:#B23A48">
+        <div class="gno">22</div><div class="gad">Pzr</div>
+        <div class="gtip">Hazırlık</div><div class="kutu"></div>
+      </div>
+  </div>
+  <div class="not"><b>Velimize not:</b> Uyku saati sabit olsun, en az 7 saat. Gece geç saatte çalışmak verimi düşürür.</div>
+</section>
+</body></html>

@@ -7,7 +7,7 @@ Kurallar her dosyadaki `Doldurma Rehberi` sekmesinden gelir.
 | Kontrol | Kural | Bulgu nasıl yazılır |
 |---|---|---|
 | Rapor başlatıldı mı? | Genel Bakış'ta "Doldurulmadı" yazıyorsa başlatılmamıştır | `<grup> · <koç>: rapor açılmamış` |
-| V satırı (11. satır) | Ödev verilen her derste V dolu olmalı | `V satırı boş → tamamlama % hesaplanamıyor` |
+| V satırı (11. satır) | Ödev verilen her derste V dolu olmalı. **2-8 Kas'ta hiçbir grupta dolu değildi.** Bu yüzden kurumun gerçek ödev yükü bilinmiyor ve programlar kalibre edilemiyor | `V satırı boş → tamamlama % hesaplanamıyor` · **kritik** |
 | Ç / Nitelik / Çizelge | Her öğrenci için dolu olmalı | `Ç eksik: 8 öğrenci` |
 | Veli görüşmesi | Her öğrencide "Görüşüldü" ya da "Ulaşılamadı" seçilmeli | sayı |
 | **Koç notu niteliği** | "Tespit + ölçülebilir karar" olmalı (Doldurma Rehberi md. 6) | `Not var ama karar yok: 4 öğrenci` |

@@ -38,3 +38,9 @@ Biçim:
 - Düzeltme: Kullanıcı kademe bazlı (5, 6, 7… ayrı ayrı), konu bazlı olmayan, saat, miktar ve ders ders "nasıl çalışılır" içeren, şık bir program istedi. Bu program veli WhatsApp gruplarına da gönderilecek. Kullanıcı "Veliler onu seviyor" dedi.
 - Kural: Tatil, sınav dönemi ve karne gibi dönemlerde varsayılan içerik, kademe bazlı rehberlik programıdır (görsel kart + veli grubu mesajı + koç yönlendirmesi). Öğrenci adı ve konu listesi içermez.
 - Kapsam: post | veli mesajı
+
+## 2026-11-08 · Ödev miktarları düşük kalmasın
+- Neydi: Ara tatil programında 5. sınıfa "5 paragraf", LGS'ye günde ~120 soru önerildi.
+- Düzeltme: Kullanıcı "Çok az, biz çocuklara çok daha fazla ödev veriyoruz. Eksik gibi olur." dedi.
+- Kural: Çalışma programlarında soru miktarları piyasa aralığının **üst bandından** seçilir (ör. LGS günde ~240, 5. sınıf ~100). Tatil, kamp gibi değerlendirilir. Kurumun gerçek ödev verisi (rapordaki V satırı) oluştukça sayılar o veriye göre kalibre edilir.
+- Kapsam: post | koçluk
