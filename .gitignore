@@ -1,0 +1,9 @@
+# Öğrenci/veli verisi bu repoya GİRMEZ
+veri/
+ozel/
+*.xlsx
+*.xls
+*.csv
+*denetim-sonucu*
+*veli-mesajlari*
+.DS_Store
