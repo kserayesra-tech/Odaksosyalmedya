@@ -65,6 +65,13 @@ Rapor yapısı: her grup dosyasında hafta sekmeleri (`2-8 Kas`, `9-15 Kas`, …
 (uyarı ayarları burada), `Haftalık Özet`, `Grup Takibi` ve `Doldurma Rehberi` bulunur.
 Doldurma kuralları `Doldurma Rehberi` sekmesindedir. Denetim bu kurallara göre yapılır.
 
+## 4b. Kullanıcının gelişimi (her zaman)
+Kullanıcı rehberlik öğretmeni ve aynı zamanda yönetici rolünde. Hem çocuğun hem kurumun iyiliğini gözetmek zorunda
+(`gelisim/iki-sapka.md`). Kendini geliştirmek istediği alanlar: vaka çalışması, veli görüşmesi, koç yönlendirme ve
+**net dil**. Kendi sözü: "Çok yumuşak kalıyorum."
+- Kullanıcı bir mesaj taslağı yazdığında, istemese bile tek satırla "netlik notu" düş. Yumuşatıcı varsa net halini öner.
+- Kullanıcı bir koç ya da veli sorununu anlattığında, cevabı vermeden önce bir kez "sen ne yapardın?" diye sor. Bu, vaka refleksi kazandırır. Acil durumlarda bu adımı atla.
+
 ## 5. Komutlar (skill'ler)
 
 | Komut | Ne yapar |
@@ -74,6 +81,9 @@ Doldurma kuralları `Doldurma Rehberi` sekmesindedir. Denetim bu kurallara göre
 | `/kocluk-denetimi` | Seçilen haftanın tüm grup raporlarını denetler: eksikler, riskler, koç mesajları |
 | `/veli-ozeti` | Koç notlarından veliye gidecek kısa ve kurum diliyle yazılmış mesaj üretir |
 | `/rehberlik-programi` | Tatil, sınav haftası vb. için kademe bazlı program hazırlar: görsel kartlar + veli ve koç mesajları |
+| `/vaka` | Süpervizyon tarzı vaka çalışması |
+| `/prova` | Rol oyunu: veli, koç ya da patron provası, puanlı geri bildirim |
+| `/net-dil` | Taslak mesajı keskinleştirir |
 | `/ogren` | Kullanıcının düzeltmesini öğrenme günlüğüne kural olarak işler |
 
 ## 6. Haftalık ritim

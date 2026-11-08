@@ -56,3 +56,8 @@ Biçim:
 - Düzeltme: Kullanıcı öğrencilere çıktı olarak da verilmesini önerdi.
 - Kural: Ortaokul programları A4 çıktı olarak da hazırlanır (ad-soyad ve takip çizelgesi alanlı). Önce öğrenciye çıktı verilir, aynı akşam veli grubuna mesaj gider.
 - Kapsam: genel
+
+## 2026-11-08 · Kalibrasyon: LGS soru sayısı
+- Kaynak: Bir LGS koçunun rapor notunda "günlük 200-250 civarında soru bekliyorum" yazıyor.
+- Kural: LGS programlarında günlük ~200-250 soru, kurumun kendi beklentisidir. Ara tatil kartındaki ~240 bununla tutarlı.
+- Kapsam: koçluk | post
