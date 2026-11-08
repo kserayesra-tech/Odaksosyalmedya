@@ -20,3 +20,9 @@ Biçim:
 - Düzeltme: Kullanıcı "taslakla başla, düzelteyim" dedi.
 - Kural: Belirsiz bir üslup kararında iki seçenek sun ve kullanıcının seçimini buraya yaz.
 - Kapsam: genel
+
+## 2026-11-08 · Tatil postunda geri sayım
+- Neydi: Ara tatilin ilk günündeki duyuru postuna küçük puntoyla "LGS'ye 211 gün" yazıldı. Denetçi, bunun baskı gibi okunabileceğini söyledi.
+- Düzeltme: Kullanıcı "mantıklı" dedi, geri sayım kalıyor.
+- Kural: Tatil duyurularında sınav geri sayımı kullanılabilir. Ana mesaj tatil olur, geri sayım küçük puntoyla yer alır.
+- Kapsam: post
