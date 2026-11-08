@@ -59,6 +59,7 @@ Aynı itirazı tekrar etme.
 | Tüm grupların özeti | `KOÇLUK RAPORLARI GENEL BAKIŞ` → `Genel Bakış` sekmesi |
 | Kırmızı uyarı / vaka panosu | `Rehberlik Takip Paneli` → `Pano` sekmesi |
 | Deneme ve sınav tarihleri | `Odak Eğitim Deneme Takvimi 2026-2027` |
+| **İş takibi (yapılacaklar)** | `Rehberlik İş Takibi`: `İşler` sekmesi (A: Son tarih · C: İş · D: Alan · E: Kim/Grup · F: Öncelik · G: Durum · H: Not), `Bugün` panosu, `Haftalık Hedef` |
 | Boş şablonlar | `ODAK_Haftalik_Kocluk_Raporu`, `ŞABLON Lise · Koçluk Raporu` |
 
 Rapor yapısı: her grup dosyasında hafta sekmeleri (`2-8 Kas`, `9-15 Kas`, …), `Öğrenci Listesi`
@@ -85,6 +86,13 @@ Kullanıcı rehberlik öğretmeni ve aynı zamanda yönetici rolünde. Hem çocu
 | `/prova` | Rol oyunu: veli, koç ya da patron provası, puanlı geri bildirim |
 | `/net-dil` | Taslak mesajı keskinleştirir |
 | `/ogren` | Kullanıcının düzeltmesini öğrenme günlüğüne kural olarak işler |
+
+## 5b. İş takibi kuralı
+Sohbette bir iş, karar ya da takip çıktığında (ör. "veliyi ara", "koça yaz", "patrona bilgi ver"),
+bunu tarih ve öncelik ile `Rehberlik İş Takibi` → `İşler` sekmesinin ilk boş satırına ekle ve kullanıcıya tek satırla söyle.
+- Dosyanın dil ayarı tr_TR'dir. Formüllerde ayırıcı **noktalı virgüldür**: `=DATE(2026;11;9)`.
+- B sütunu (Gün) otomatik dolar, oraya yazma.
+- Pazartesi sabahı: geçen haftanın `Haftalık Hedef` satırlarına sonuç sor, yeni haftanın 3 hedefini birlikte yaz.
 
 ## 6. Haftalık ritim
 

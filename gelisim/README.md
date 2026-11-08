@@ -34,3 +34,4 @@ soru sorar, itiraz eder, prova yaptırır, geri bildirim verir. Cevabı hemen ve
 Her vakadan ve provadan sonra buraya **tek satır** eklenir: tarih · ne çalışıldı · güçlü yan · gelişim noktası.
 
 - 2026-11-08 · Gelişim alanı kuruldu · Vaka 01 açıldı (veli şikâyeti: ders günü sayısı)
+- 2026-11-08 · Prova 01 (şikâyetçi veli) · Güçlü: açılış ("sizden dinlemek istedim"), son cevapta netlik · Gelişim: "kaygılısınız" demek, "takdir edersiniz / yoğun tempo" savunması, 3 sorudan 1-2sine cevap
