@@ -73,3 +73,9 @@ Biçim:
 - Düzeltme: Kullanıcı denetçi önerisini kabul etti: 5. sınıf 20 matematik, 15 paragraf.
 - Kural: Programlarda günlük miktarlar kademeyle **artar** (5 < 6 < 7 < 8). Bir kademe değişince komşu kademeler de kontrol edilir.
 - Kapsam: program
+
+## 2026-11-13 · 7. sınıfta kaygı: yük ve ton düşürüldü
+- Neydi: 7. sınıf günlük 50 matematik ve 30 paragraf, prova günü süre tutarak 90 soru, not "LGS'nin provası".
+- Düzeltme: Kullanıcı şöyle dedi: "7'leri de biraz düşürelim, çocuklarımın kaygısı çok arttı, ağladılar."
+- Kural: 7. sınıf ve altı için programlarda **kaygı artırıcı dil kullanılmaz** ("LGS provası", süre baskısı, büyük sayılar). Prova günü süre tutmadan, "amaç puan değil, eksik görmek" çerçevesiyle verilir. Velimize notta çaba takdiri vurgulanır. 7. sınıf: Matematik 35, Türkçe 25 paragraf.
+- Kapsam: program | veli mesajı | post

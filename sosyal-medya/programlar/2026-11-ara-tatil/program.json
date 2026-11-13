@@ -284,42 +284,42 @@
    "id": "7",
    "ad": "7. Sınıf",
    "renk": "#3E9B6B",
-   "sure": "3-3,5 saat",
-   "blok": "5 blok × 40 dk",
+   "sure": "2,5-3 saat",
+   "blok": "4 blok × 40 dk",
    "dersler": [
     [
      "Matematik",
-     "50 soru (20'si yeni nesil)",
-     "Uzun sorularda verilerin altını çizerek okusun."
+     "35 soru (10'u yeni nesil)",
+     "Önce temel sorular, yeni nesil en sonda. Uzun sorularda verilerin altını çizsin."
     ],
     [
      "Türkçe",
-     "30 paragraf + 20 dil bilgisi",
-     "Ayrıca 30 dk kitap. Paragrafta süre tutsun."
+     "25 paragraf + 10 dil bilgisi",
+     "Ayrıca 30 dk kitap. Paragrafta acele etmesin, önce anlamaya odaklansın."
     ],
     [
      "Fen Bilimleri",
-     "35 soru",
-     "Yanlış yaptığı konunun özetine dönüp 5 soru daha çözsün."
+     "25 soru",
+     "Yanlış yaptığı konunun özetine dönüp tekrar okusun."
     ],
     [
      "Sosyal Bilgiler",
-     "25 soru",
+     "20 soru",
      "Yanlışlarını kısa notlarla deftere geçirsin."
     ],
     [
      "İngilizce",
-     "20 soru + 15 kelime",
+     "15 soru + 10 kelime",
      "Kelimeleri önceki günlerinkilerle birlikte tekrar etsin."
     ]
    ],
-   "ozel": "Cumartesi: 90 soruluk karışık deneme, 100 dk süre tutarak.",
-   "not": "7. sınıf LGS'nin provasıdır. Yeni nesil sorudan korkmasın. Doğru sayısından çok denemesi önemli.",
+   "ozel": "Cumartesi: 50 soruluk karışık mini deneme. Süre tutmadan, rahatça çözsün. Amaç puan değil, hangi konuya döneceğini görmek.",
+   "not": "Hedefin tamamını yapamadığı gün sorun değil. Önemli olan her gün masaya oturması. Lütfen sonuçtan çok çabasını takdir edin.",
    "akis": [
     [
      "09:30 – 10:10",
-     "Matematik 1",
-     "30 soru · temel"
+     "Matematik",
+     "25 temel soru"
     ],
     [
      "10:10 – 10:20",
@@ -329,7 +329,7 @@
     [
      "10:20 – 11:00",
      "Türkçe",
-     "30 paragraf · süre tut"
+     "25 paragraf + 10 dil bilgisi"
     ],
     [
      "11:00 – 11:10",
@@ -339,7 +339,7 @@
     [
      "11:10 – 11:50",
      "Fen Bilimleri",
-     "35 soru"
+     "25 soru"
     ],
     [
      "11:50 – 13:30",
@@ -348,23 +348,13 @@
     ],
     [
      "13:30 – 14:10",
-     "Matematik 2",
-     "20 yeni nesil soru"
+     "Matematik + Sosyal",
+     "10 yeni nesil + 20 Sosyal sorusu"
     ],
     [
-     "14:10 – 14:20",
-     "Mola",
-     ""
-    ],
-    [
-     "14:20 – 15:00",
-     "Sosyal + Dil bilgisi",
-     "25 Sosyal + 20 dil bilgisi"
-    ],
-    [
-     "15:10 – 15:30",
+     "14:20 – 14:40",
      "İngilizce",
-     "20 soru + 15 kelime"
+     "15 soru + 10 kelime"
     ],
     [
      "Akşam · 30 dk",
@@ -375,23 +365,23 @@
    "takip": [
     [
      "Matematik",
-     "50 soru"
-    ],
-    [
-     "Türkçe",
-     "50 soru"
-    ],
-    [
-     "Fen Bilimleri",
      "35 soru"
     ],
     [
-     "Sosyal Bilgiler",
+     "Türkçe",
+     "35 soru"
+    ],
+    [
+     "Fen Bilimleri",
      "25 soru"
     ],
     [
+     "Sosyal Bilgiler",
+     "20 soru"
+    ],
+    [
      "İngilizce",
-     "20 soru + 15 kelime"
+     "15 soru + 10 kelime"
     ],
     [
      "Kitap okuma",
