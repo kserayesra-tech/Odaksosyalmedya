@@ -85,3 +85,14 @@ Biçim:
 - Düzeltme: Kullanıcı "Denemeyi de silelim, en geç kaçta uyanacağız yazmayalım" dedi (7. sınıfta kaygı ve ağlama sonrası).
 - Kural: Ortaokul (5-6-7) tatil programlarında deneme yoktur, yerine "tekrar günü" (yeni soru yok) konur. Saat dayatılmaz. Akış "1. çalışma, mola…" sırasıyla verilir, başlangıç saatini öğrenci seçer.
 - Kapsam: program | post
+
+## 2026-11-13 · Kaygıyı azaltan program dili (ortaokul)
+- Neydi: Tek sayı halinde "hedef", "takip çizelgesi", koç kontrolünde "hedefin %70'i", "nasıl çalışmalı?" komut dili.
+- Düzeltme: Kullanıcı "Kaygıyı azaltacak şekilde olsun lütfen, çocuklar çok üzüldü, ben de" dedi.
+- Kural: Ortaokul programlarında:
+  - Sayılar **aralık** olarak verilir (ör. 20-25 soru), "hedef" yerine "öneri" yazılır.
+  - Takip tablosunun adı "Emek çizelgesi"dir: ✓ işareti yeterli, soru sayısı isteğe bağlıdır. Bir "Bugün nasıldım?" satırı bulunur.
+  - Yüzdelik başarı ölçütü kullanılmaz. Koç kontrolü "emeği takdir edildi" çerçevesindedir.
+  - Her belgede "Zorlandığında ne yapabilirim?" kutusu (nefes, mola, anlat, yarın yeni gün) yer alır.
+  - Kural 4 "Kendine nazik ol" olur.
+- Kapsam: program | veli mesajı | post

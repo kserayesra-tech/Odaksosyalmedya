@@ -39,15 +39,15 @@ const sayfa1 = (k) => `
   </div>
 
   <div class="ozet">
-    <div class="kutu"><small>Günlük süre</small><b>${esc(k.sure)}</b></div>
+    <div class="kutu"><small>Günlük süre (yaklaşık)</small><b>${esc(k.sure)}</b></div>
     <div class="kutu"><small>Çalışma düzeni</small><b>${esc(k.blok)}</b></div>
     <div class="kutu"><small>Çalışma günü</small><b>${calismaGunleri.length - 1} + 1 ${calismaGunleri.some(g => g.tip === 'tekrar') ? 'tekrar' : 'prova'}</b></div>
-    <div class="kutu"><small>Tatil dönüşü</small><b>Koçuna çizelgeni getir</b></div>
+    <div class="kutu"><small>Tatil dönüşü</small><b>Koçunla birlikte bakacaksınız</b></div>
   </div>
 
-  <h3>1 · Günlük hedefler ve yöntem</h3>
+  <h3>1 · Günlük öneriler ve ipuçları</h3>
   <table class="hedef">
-    <thead><tr><th>Ders</th><th>Günlük hedef</th><th>Nasıl çalışmalı?</th></tr></thead>
+    <thead><tr><th>Ders</th><th>Günlük öneri</th><th>İpucu</th></tr></thead>
     <tbody>${k.dersler.map(d => `<tr><td class="d">${esc(d[0])}</td><td class="m">${esc(d[1])}</td><td>${esc(d[2])}</td></tr>`).join('')}</tbody>
   </table>
 
@@ -76,14 +76,15 @@ const sayfa1 = (k) => `
 const sayfa2 = (k) => `
 <section class="sayfa" style="--k:${k.renk}">
   ${ust(k)}
-  <h3>5 · Günlük takip çizelgesi</h3>
-  <p class="aciklama">Her gün çalışmanı bitirince, çözdüğün soru sayısını kutuya yaz. Hedefin altında kaldıysan sorun değil, dürüst yaz. Koç öğretmenin en çok buna bakacak.</p>
+  <h3>5 · Emek çizelgem</h3>
+  <p class="aciklama">Çalıştığın her ders için o günün kutusuna ✓ koy. İstersen kaç soru çözdüğünü de yazabilirsin. Bu bir sınav değil, kendi emeğini görmen için.</p>
   <table class="cizelge">
     <thead>
-      <tr><th class="ders">Ders · günlük hedef</th>${calismaGunleri.map(g => `<th class="${g.tip}">${g.g} Kas<br><small>${g.ad}${g.tip === 'prova' ? ' · Prova' : g.tip === 'tekrar' ? ' · Tekrar' : ''}</small></th>`).join('')}<th>Toplam</th></tr>
+      <tr><th class="ders">Ders · günlük öneri</th>${calismaGunleri.map(g => `<th class="${g.tip}">${g.g} Kas<br><small>${g.ad}${g.tip === 'prova' ? ' · Prova' : g.tip === 'tekrar' ? ' · Tekrar' : ''}</small></th>`).join('')}<th>Toplam</th></tr>
     </thead>
     <tbody>
       ${k.takip.map(t => `<tr><td class="ders"><b>${esc(t[0])}</b><small>${esc(t[1])}</small></td>${calismaGunleri.map(g => `<td class="${g.tip}"></td>`).join('')}<td class="top"></td></tr>`).join('')}
+      <tr class="his"><td class="ders"><b>Bugün nasıldım?</b><small>Birini yuvarlak içine al</small></td>${calismaGunleri.map(g => `<td class="${g.tip} yuz">🙂 😐 🙁</td>`).join('')}<td class="top"></td></tr>
       <tr class="paraf"><td class="ders"><b>Veli parafı</b><small>Her akşam</small></td>${calismaGunleri.map(g => `<td class="${g.tip}"></td>`).join('')}<td class="top"></td></tr>
     </tbody>
   </table>
@@ -112,9 +113,10 @@ const sayfa2 = (k) => `
     </div>
   </div>
 
+  ${p.zorlanirsan ? `<div class="zor"><b class="bas">Zorlandığında ne yapabilirim?</b><ul>${p.zorlanirsan.map(z => `<li><b>${esc(z[0])}.</b> ${esc(z[1])}</li>`).join('')}</ul></div>` : ''}
   <div class="koc">
-    <b>Koç kontrolü · 23-29 Kasım</b>
-    <span>☐ Çizelge getirildi</span><span>☐ Hedefin %70'i ve üzeri</span><span>☐ Zorlandığı konular konuşuldu</span>
+    <b>Koçumla birlikte · 23-29 Kasım</b>
+    <span>☐ Çizelgeye birlikte bakıldı</span><span>☐ Emeği takdir edildi</span><span>☐ Zorlandığı konular konuşuldu</span>
     <span class="imza">Koç imzası: ............................</span>
   </div>
   ${alt(2)}
@@ -166,19 +168,26 @@ table{width:100%;border-collapse:collapse}
 .cizelge th.prova,.cizelge th.tekrar{background:var(--k);border-color:var(--k)}
 .cizelge th small{font-weight:400;opacity:.85}
 .cizelge th.ders{text-align:left;padding-left:2.5mm;width:44mm}
-.cizelge td{border:.25mm solid #C9C2B4;height:15mm}
+.cizelge td{border:.25mm solid #C9C2B4;height:11.5mm}
 .cizelge td.ders{padding:1.5mm 2.5mm;line-height:1.25}
 .cizelge td.ders small{display:block;color:var(--k);font-weight:600;font-size:8pt}
 .cizelge td.prova,.cizelge td.tekrar{background:#FBF7F0}
 .cizelge td.top{background:#F1EEE7;width:17mm}
 .cizelge tr.paraf td{height:10mm}
+.cizelge tr.his td{height:10mm}
+.cizelge td.yuz{text-align:center;font-size:7.5pt;letter-spacing:0;white-space:nowrap;font-family:'Noto Color Emoji',Inter,sans-serif}
+.zor{margin-top:4mm;border-radius:2mm;background:#EEF4F1;padding:3mm 4mm}
+.zor b.bas{display:block;font-family:Nunito;font-weight:800;color:#2C3650;font-size:10.5pt;margin-bottom:1.5mm}
+.zor ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 6mm}
+.zor li{line-height:1.35}
+.zor li b{color:#3E9B6B}
 .alt-blok{margin-top:1mm}
 .prova-tablo th{font-size:8pt;color:#5B6B70;font-weight:600;padding:1.3mm;border-bottom:.4mm solid #404F6E;text-align:center}
-.prova-tablo td{border:.25mm solid #C9C2B4;height:8mm;padding:0 2mm}
+.prova-tablo td{border:.25mm solid #C9C2B4;height:7.3mm;padding:0 2mm}
 .prova-tablo td:first-child{font-weight:600;width:30mm;color:#2C3650}
 .satirlar label{display:block;font-size:8.5pt;color:#2C3650;font-weight:600;margin-top:2.5mm}
-.satirlar i{display:block;border-bottom:.25mm solid #9AA5A8;height:7mm}
-.koc{position:absolute;left:13mm;right:13mm;bottom:17mm;border:.4mm dashed #404F6E;border-radius:2mm;padding:3mm 4mm;display:flex;flex-wrap:wrap;gap:2mm 7mm;align-items:center;font-size:8.8pt}
+.satirlar i{display:block;border-bottom:.25mm solid #9AA5A8;height:6.3mm}
+.koc{margin-top:3.5mm;border:.4mm dashed #404F6E;border-radius:2mm;padding:3mm 4mm;display:flex;flex-wrap:wrap;gap:2mm 7mm;align-items:center;font-size:8.8pt}
 .koc b{color:#404F6E;width:100%}
 .koc .imza{margin-left:auto}
 footer{position:absolute;left:13mm;right:13mm;bottom:7mm;display:flex;justify-content:space-between;gap:6mm;font-size:7pt;color:#8A9599;border-top:.25mm solid #E2DCCF;padding-top:2mm}

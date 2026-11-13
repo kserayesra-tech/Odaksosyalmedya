@@ -57,11 +57,11 @@ const kart = (k) => `
     <div class="sure"><b>${esc(k.sure)}</b><span>günde · ${esc(k.blok)}</span></div>
   </div>
   <table>
-    <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
+    <tr><th>Ders</th><th>Günlük öneri</th><th>İpucu</th></tr>
     ${k.dersler.map(d => `<tr><td class="ders">${esc(d[0])}</td><td class="mik">${esc(d[1])}</td><td>${esc(d[2])}</td></tr>`).join('')}
   </table>
   <div class="ozel"><b>${esc(k.ozelBaslik || 'Prova günü')}</b>${esc(k.ozel)}</div>
-  <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
+  <div class="takip">Emek çizelgesi · çalıştığı günü işaretlesin</div>
   ${gunSerit(k.renk)}
   <div class="not"><b>Velimize not:</b> ${esc(k.not)}</div>
   ${p.dipnot ? `<div class="dipnot kd">${esc(p.dipnot)}</div>` : ''}

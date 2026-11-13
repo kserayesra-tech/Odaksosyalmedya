@@ -62,8 +62,8 @@
    "Mola ekransız: su, hareket, pencere. Öğlen 1 saat ara."
   ],
   [
-   "Akşam 5 dakika sohbet",
-   "“Bugün ne öğrendin?” Sorgu değil, merak."
+   "Kendine nazik ol",
+   "Hepsini yapamadığın gün sorun değil. Yarın kaldığın yerden devam."
   ]
  ],
  "kademeler": [
@@ -71,52 +71,52 @@
    "id": "5",
    "ad": "5. Sınıf",
    "renk": "#E54F37",
-   "sure": "2-2,5 saat",
-   "blok": "3 blok × 40 dk",
+   "sure": "1,5-2 saat",
+   "blok": "3 kısa çalışma + molalar",
    "dersler": [
     [
      "Matematik",
-     "20 soru",
-     "İşlemi deftere yazarak çözsün. Yanlışı silmesin, yanına doğrusunu yazsın."
+     "15-20 soru",
+     "İşlemi deftere yaz. Yanlışı silme, yanına doğrusunu yaz."
     ],
     [
      "Türkçe",
-     "15 paragraf + 10 dil bilgisi",
-     "Ayrıca 30 dk kitap. Okuduğunu size 3 cümleyle anlatsın."
+     "10-15 paragraf + 10 dil bilgisi",
+     "Ayrıca kitap oku. Okuduğunu ailene 3 cümleyle anlat."
     ],
     [
      "Fen Bilimleri",
-     "20 soru",
-     "Okul defterinden bir konuyu kendi cümleleriyle anlatsın."
+     "15-20 soru",
+     "Bir konuyu kendi cümlelerinle anlatmayı dene."
     ],
     [
      "Sosyal Bilgiler",
-     "15 soru",
-     "Bilmediği kavramları kavram kartına yazsın."
+     "10-15 soru",
+     "Bilmediğin kavramları küçük kartlara yaz."
     ],
     [
      "İngilizce",
-     "10 kelime + 10 soru",
-     "Her kelimeyi bir cümle içinde kullansın."
+     "10 kelime + 5-10 soru",
+     "Her kelimeyle bir cümle kur."
     ]
    ],
    "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
-   "not": "Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar.",
+   "not": "Bu yaşta miktar değil düzen önemli. Hepsini yapamadığı gün sorun değil. Lütfen sonuçtan çok çabasını takdir edin.",
    "akis": [
     [
      "1. çalışma",
      "Matematik",
-     "20 soru · işlemler deftere"
+     "15-20 soru"
     ],
     [
      "Mola",
      "Mola",
-     "Ekransız: su, hareket"
+     "Ekransız"
     ],
     [
      "2. çalışma",
      "Türkçe",
-     "15 paragraf + 10 dil bilgisi"
+     "10-15 paragraf + 10 dil bilgisi"
     ],
     [
      "Mola",
@@ -126,7 +126,7 @@
     [
      "3. çalışma",
      "Fen + Sosyal",
-     "20 Fen + 15 Sosyal sorusu"
+     "15-20 Fen + 10-15 Sosyal"
     ],
     [
      "Öğle arası",
@@ -136,22 +136,127 @@
     [
      "4. çalışma",
      "İngilizce",
-     "10 kelime + 10 soru"
+     "10 kelime + 5-10 soru"
     ],
     [
      "Akşam",
      "Kitap",
-     "Ekransız okuma, yatmadan önce"
+     "Ekransız okuma"
     ]
    ],
    "takip": [
     [
      "Matematik",
-     "20 soru"
+     "15-20 soru"
     ],
     [
      "Türkçe",
-     "25 soru"
+     "10-15 paragraf"
+    ],
+    [
+     "Fen Bilimleri",
+     "15-20 soru"
+    ],
+    [
+     "Sosyal Bilgiler",
+     "10-15 soru"
+    ],
+    [
+     "İngilizce",
+     "10 kelime"
+    ],
+    [
+     "Kitap okuma",
+     "20-30 dk"
+    ]
+   ],
+   "ozelBaslik": "Tekrar günü"
+  },
+  {
+   "id": "6",
+   "ad": "6. Sınıf",
+   "renk": "#E9A23B",
+   "sure": "2-2,5 saat",
+   "blok": "4 kısa çalışma + molalar",
+   "dersler": [
+    [
+     "Matematik",
+     "20-25 soru",
+     "Kolaylardan başla, zorları sona bırak. Yanlışları işaretle."
+    ],
+    [
+     "Türkçe",
+     "15-20 paragraf + 10 dil bilgisi",
+     "Ayrıca kitap oku. Bilmediğin kelimeleri deftere yaz."
+    ],
+    [
+     "Fen Bilimleri",
+     "20 soru",
+     "Bir konuyu şema ya da çizimle özetle."
+    ],
+    [
+     "Sosyal Bilgiler",
+     "15 soru",
+     "Harita ve zaman çizelgesiyle tekrar et."
+    ],
+    [
+     "İngilizce",
+     "10 kelime + 10 soru",
+     "Kısa bir diyaloğu sesli oku."
+    ]
+   ],
+   "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
+   "not": "Hepsini yapamadığı gün sorun değil. Önemli olan her gün biraz çalışması. Ekran saatini birlikte belirlemeniz yeterli.",
+   "akis": [
+    [
+     "1. çalışma",
+     "Matematik",
+     "20-25 soru"
+    ],
+    [
+     "Mola",
+     "Mola",
+     "Ekransız"
+    ],
+    [
+     "2. çalışma",
+     "Türkçe",
+     "15-20 paragraf + 10 dil bilgisi"
+    ],
+    [
+     "Mola",
+     "Mola",
+     ""
+    ],
+    [
+     "3. çalışma",
+     "Fen Bilimleri",
+     "20 soru"
+    ],
+    [
+     "Öğle arası",
+     "Serbest",
+     "Öğle yemeği, dinlenme"
+    ],
+    [
+     "4. çalışma",
+     "Sosyal + İngilizce",
+     "15 Sosyal + 10 İngilizce"
+    ],
+    [
+     "Akşam",
+     "Kitap",
+     "Ekransız okuma"
+    ]
+   ],
+   "takip": [
+    [
+     "Matematik",
+     "20-25 soru"
+    ],
+    [
+     "Türkçe",
+     "15-20 paragraf"
     ],
     [
      "Fen Bilimleri",
@@ -163,121 +268,11 @@
     ],
     [
      "İngilizce",
-     "10 soru + 10 kelime"
+     "10 soru"
     ],
     [
      "Kitap okuma",
-     "30 dk"
-    ]
-   ],
-   "ozelBaslik": "Tekrar günü"
-  },
-  {
-   "id": "6",
-   "ad": "6. Sınıf",
-   "renk": "#E9A23B",
-   "sure": "2,5-3 saat",
-   "blok": "4 blok × 40 dk",
-   "dersler": [
-    [
-     "Matematik",
-     "25 soru",
-     "İlk 15'i kolaydan, son 10'u zordan. Yanlışları işaretlesin."
-    ],
-    [
-     "Türkçe",
-     "20 paragraf + 15 dil bilgisi",
-     "Ayrıca 30 dk kitap. Bilmediği kelimeleri deftere yazsın."
-    ],
-    [
-     "Fen Bilimleri",
-     "25 soru",
-     "Bir konuyu şema ya da çizimle tek sayfada özetlesin."
-    ],
-    [
-     "Sosyal Bilgiler",
-     "20 soru",
-     "Harita ve zaman çizelgesi üzerinden tekrar etsin."
-    ],
-    [
-     "İngilizce",
-     "15 kelime + 10 soru",
-     "Kısa bir diyaloğu sesli okusun."
-    ]
-   ],
-   "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
-   "not": "Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli.",
-   "akis": [
-    [
-     "1. çalışma",
-     "Matematik",
-     "25 soru · ilk 15 kolay, son 10 zor"
-    ],
-    [
-     "Mola",
-     "Mola",
-     "Ekransız"
-    ],
-    [
-     "2. çalışma",
-     "Türkçe",
-     "20 paragraf + 15 dil bilgisi"
-    ],
-    [
-     "Mola",
-     "Mola",
-     ""
-    ],
-    [
-     "3. çalışma",
-     "Fen Bilimleri",
-     "25 soru + 1 sayfa şema özet"
-    ],
-    [
-     "Öğle arası",
-     "Serbest",
-     "Öğle yemeği, dinlenme"
-    ],
-    [
-     "4. çalışma",
-     "Sosyal Bilgiler",
-     "20 soru"
-    ],
-    [
-     "5. çalışma",
-     "İngilizce",
-     "15 kelime + 10 soru"
-    ],
-    [
-     "Akşam",
-     "Kitap",
-     "Ekransız okuma"
-    ]
-   ],
-   "takip": [
-    [
-     "Matematik",
-     "25 soru"
-    ],
-    [
-     "Türkçe",
-     "35 soru"
-    ],
-    [
-     "Fen Bilimleri",
-     "25 soru"
-    ],
-    [
-     "Sosyal Bilgiler",
-     "20 soru"
-    ],
-    [
-     "İngilizce",
-     "10 soru + 15 kelime"
-    ],
-    [
-     "Kitap okuma",
-     "30 dk"
+     "20-30 dk"
     ]
    ],
    "ozelBaslik": "Tekrar günü"
@@ -287,32 +282,32 @@
    "ad": "7. Sınıf",
    "renk": "#3E9B6B",
    "sure": "2,5-3 saat",
-   "blok": "4 blok × 40 dk",
+   "blok": "5 kısa çalışma + molalar",
    "dersler": [
     [
      "Matematik",
-     "35 soru (10'u yeni nesil)",
-     "Önce temel sorular, yeni nesil en sonda. Uzun sorularda verilerin altını çizsin."
+     "25-35 soru",
+     "Kolaylarla başla. Yeni nesil soruları sona bırak, verilerin altını çiz."
     ],
     [
      "Türkçe",
-     "25 paragraf + 10 dil bilgisi",
-     "Ayrıca 30 dk kitap. Paragrafta acele etmesin, önce anlamaya odaklansın."
+     "20-25 paragraf + 10 dil bilgisi",
+     "Ayrıca kitap oku. Acele etme, önce anlamaya odaklan."
     ],
     [
      "Fen Bilimleri",
-     "25 soru",
-     "Yanlış yaptığı konunun özetine dönüp tekrar okusun."
+     "20-25 soru",
+     "Yanlış yaptığın konunun özetine dönüp tekrar oku."
     ],
     [
      "Sosyal Bilgiler",
-     "20 soru",
-     "Yanlışlarını kısa notlarla deftere geçirsin."
+     "15-20 soru",
+     "Yanlışlarını kısa notlarla deftere geçir."
     ],
     [
      "İngilizce",
-     "15 soru + 10 kelime",
-     "Kelimeleri önceki günlerinkilerle birlikte tekrar etsin."
+     "10 kelime + 10-15 soru",
+     "Kelimeleri önceki günlerinkilerle birlikte tekrar et."
     ]
    ],
    "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
@@ -321,7 +316,7 @@
     [
      "1. çalışma",
      "Matematik",
-     "25 temel soru"
+     "20-25 temel soru"
     ],
     [
      "Mola",
@@ -331,7 +326,7 @@
     [
      "2. çalışma",
      "Türkçe",
-     "25 paragraf + 10 dil bilgisi"
+     "20-25 paragraf + 10 dil bilgisi"
     ],
     [
      "Mola",
@@ -341,7 +336,7 @@
     [
      "3. çalışma",
      "Fen Bilimleri",
-     "25 soru"
+     "20-25 soru"
     ],
     [
      "Öğle arası",
@@ -351,12 +346,12 @@
     [
      "4. çalışma",
      "Matematik + Sosyal",
-     "10 yeni nesil + 20 Sosyal sorusu"
+     "5-10 yeni nesil + 15-20 Sosyal"
     ],
     [
      "5. çalışma",
      "İngilizce",
-     "15 soru + 10 kelime"
+     "10 kelime + 10-15 soru"
     ],
     [
      "Akşam",
@@ -367,27 +362,27 @@
    "takip": [
     [
      "Matematik",
-     "35 soru"
+     "25-35 soru"
     ],
     [
      "Türkçe",
-     "35 soru"
+     "20-25 paragraf"
     ],
     [
      "Fen Bilimleri",
-     "25 soru"
+     "20-25 soru"
     ],
     [
      "Sosyal Bilgiler",
-     "20 soru"
+     "15-20 soru"
     ],
     [
      "İngilizce",
-     "15 soru + 10 kelime"
+     "10-15 soru"
     ],
     [
      "Kitap okuma",
-     "30 dk"
+     "20-30 dk"
     ]
    ],
    "ozelBaslik": "Tekrar günü"
@@ -547,5 +542,23 @@
    "30 dk hafif tekrar, çanta, haftanın planı ve okula göre uyku saatine dönüş."
   ]
  ],
- "dipnot": "Bu program rehberlik birimimizin önerisidir. Koç öğretmeninizin verdiği ödevler önceliklidir."
+ "dipnot": "Bu program rehberlik birimimizin önerisidir. Koç öğretmeninizin verdiği ödevler önceliklidir.",
+ "zorlanirsan": [
+  [
+   "Dur ve nefes al",
+   "4 saniye nefes al, 4 saniye tut, 4 saniyede ver. 3 kez tekrarla."
+  ],
+  [
+   "Kısa bir mola ver",
+   "Kalk, su iç, biraz yürü. Sonra kaldığın yerden devam et."
+  ],
+  [
+   "Birine anlat",
+   "Annene, babana ya da koç öğretmenine 'zorlandım' demek güçlülüktür."
+  ],
+  [
+   "Yarın yeni bir gün",
+   "Yapamadığın gün kendine kızma. Az ama her gün, hiç yapmamaktan iyidir."
+  ]
+ ]
 }

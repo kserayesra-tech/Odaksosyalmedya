@@ -38,9 +38,9 @@ Yeniden üretmek için: `node olustur.js 5,6,7 ortaokul` (görsel kartlar) · `n
 ## Veli grubu mesajı (öneri tonu)
 > Değerli velilerimiz, merhaba 🌿
 > 14-22 Kasım ara tatili için rehberlik birimimiz olarak **{5./6./7.} sınıf** öğrencilerimize yönelik bir çalışma programı **önerisi** hazırladık. Görseli ekte bulabilirsiniz. Çocuklarımıza bugün basılı hâlini de verdik.
-> Bu program bir zorunluluk değil, bir yol haritasıdır. Tatilin ilk iki günü tamamen dinlenmeye ayrıldı. Sonraki günlerde her sabah düzenli bir saatte başlayıp kısa molalarla ilerlemek yeterli. Programı çocuğunuzun temposuna göre esnetebilirsiniz. Önemli olan her gün biraz, ama düzenli çalışması.
+> Bu program bir zorunluluk değil, bir yol haritasıdır. Tatilin ilk iki günü tamamen dinlenmeye ayrıldı. Sonraki günlerde kendi seçtiği düzenli bir saatte, kısa molalarla çalışması yeterli. Deneme yok, saat zorunluluğu yok. Sayılar birer öneri. Programı çocuğunuzun temposuna göre esnetebilirsiniz. Önemli olan her gün biraz, ama düzenli çalışması.
 > Koç öğretmenimizin verdiği tatil ödevleri varsa önce onlar tamamlanmalı. Program, kalan zaman için bir öneri niteliğinde.
-> Kâğıdın altındaki takip çizelgesini çocuğunuz kendisi işaretlerse çok güzel olur. Tatil dönüşü koç öğretmenimizle birlikte bakacağız.
+> Arka sayfadaki "Emek çizelgesi"ne çalıştığı günleri işaretlemesi yeterli. Bu bir sınav değil, kendi emeğini görmesi için. Tatil dönüşü koç öğretmenimizle birlikte bakacağız.
 > Hepinize keyifli ve dinlendirici bir tatil dileriz.
 > Odak Eğitim Rehberlik Birimi
 
