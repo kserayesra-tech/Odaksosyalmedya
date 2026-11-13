@@ -180,12 +180,12 @@
    "dersler": [
     [
      "Matematik",
-     "40 soru",
-     "İlk 20'si kolaydan, son 20'si zordan. Yanlışları işaretlesin."
+     "25 soru",
+     "İlk 15'i kolaydan, son 10'u zordan. Yanlışları işaretlesin."
     ],
     [
      "Türkçe",
-     "25 paragraf + 15 dil bilgisi",
+     "20 paragraf + 15 dil bilgisi",
      "Ayrıca 30 dk kitap. Bilmediği kelimeleri deftere yazsın."
     ],
     [
@@ -210,7 +210,7 @@
     [
      "09:30 – 10:10",
      "Matematik",
-     "40 soru · ilk 20 kolay, son 20 zor"
+     "25 soru · ilk 15 kolay, son 10 zor"
     ],
     [
      "10:10 – 10:20",
@@ -220,7 +220,7 @@
     [
      "10:20 – 11:00",
      "Türkçe",
-     "25 paragraf + 15 dil bilgisi"
+     "20 paragraf + 15 dil bilgisi"
     ],
     [
      "11:00 – 11:15",
@@ -256,11 +256,11 @@
    "takip": [
     [
      "Matematik",
-     "40 soru"
+     "25 soru"
     ],
     [
      "Türkçe",
-     "40 soru"
+     "35 soru"
     ],
     [
      "Fen Bilimleri",

@@ -61,3 +61,9 @@ Biçim:
 - Kaynak: Bir LGS koçunun rapor notunda "günlük 200-250 civarında soru bekliyorum" yazıyor.
 - Kural: LGS programlarında günlük ~200-250 soru, kurumun kendi beklentisidir. Ara tatil kartındaki ~240 bununla tutarlı.
 - Kapsam: koçluk | post
+
+## 2026-11-13 · 6. sınıf ara tatil miktarları
+- Neydi: 6. sınıf için günlük Matematik 40 soru, Türkçe 25 paragraf.
+- Düzeltme: Kullanıcı "6. sınıfları 25 matematik, 20 paragraf yapalım" dedi.
+- Kural: 6. sınıf ara tatil hedefi günlük Matematik 25 soru, Türkçe 20 paragraf (+15 dil bilgisi). Kademeler arası miktarlar karşılaştırılırken bu değer referans alınır.
+- Kapsam: koçluk | program
