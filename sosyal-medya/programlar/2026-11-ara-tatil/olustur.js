@@ -15,7 +15,7 @@ const kapakAlt = filtre ? p.kademeler.map(k => k.ad.split(' · ')[0].replace('. 
 const logo = 'data:image/png;base64,' + fs.readFileSync(path.join(dir, '../../../marka/logo/odak-logo.png')).toString('base64');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 
-const gunEtiket = { dinlen: 'Dinlenme', calis: 'Çalışma', prova: 'Prova', hazirlik: 'Hazırlık' };
+const gunEtiket = { dinlen: 'Dinlenme', calis: 'Çalışma', prova: 'Prova', tekrar: 'Tekrar', hazirlik: 'Hazırlık' };
 const gunSerit = (renk) => `
   <div class="serit">
     ${p.gunler.map(g => `
@@ -60,7 +60,7 @@ const kart = (k) => `
     <tr><th>Ders</th><th>Günlük</th><th>Nasıl çalışmalı?</th></tr>
     ${k.dersler.map(d => `<tr><td class="ders">${esc(d[0])}</td><td class="mik">${esc(d[1])}</td><td>${esc(d[2])}</td></tr>`).join('')}
   </table>
-  <div class="ozel"><b>Prova günü</b>${esc(k.ozel)}</div>
+  <div class="ozel"><b>${esc(k.ozelBaslik || 'Prova günü')}</b>${esc(k.ozel)}</div>
   <div class="takip">Takip çizelgesi · tamamladığı günü işaretlesin</div>
   ${gunSerit(k.renk)}
   <div class="not"><b>Velimize not:</b> ${esc(k.not)}</div>
@@ -108,7 +108,7 @@ td.mik{font-weight:600;width:235px;color:var(--k)}
 .kapak .serit{margin-top:26px}
 .gun{background:#fff;border-radius:14px;padding:10px 4px 12px;text-align:center;border:2px solid var(--cizgi)}
 .gun.calis{border-color:var(--k)}
-.gun.prova{background:var(--k);color:#fff;border-color:var(--k)}
+.gun.prova,.gun.tekrar{background:var(--k);color:#fff;border-color:var(--k)}
 .gun.dinlen{background:#EEF4F1}
 .gno{font-family:Nunito;font-weight:900;font-size:30px;line-height:1}
 .gad{font-size:15px;font-weight:600;opacity:.75}

@@ -13,7 +13,7 @@ const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const secim = process.argv[2] ? process.argv[2].split(',') : null;
 const kademeler = p.kademeler.filter(k => k.akis && (!secim || secim.includes(k.id)));
 
-const calismaGunleri = p.gunler.filter(g => g.tip === 'calis' || g.tip === 'prova');
+const calismaGunleri = p.gunler.filter(g => g.tip === 'calis' || g.tip === 'prova' || g.tip === 'tekrar');
 
 const ust = (k, sayfa) => `
   <header>
@@ -41,7 +41,7 @@ const sayfa1 = (k) => `
   <div class="ozet">
     <div class="kutu"><small>Günlük süre</small><b>${esc(k.sure)}</b></div>
     <div class="kutu"><small>Çalışma düzeni</small><b>${esc(k.blok)}</b></div>
-    <div class="kutu"><small>Çalışma günü</small><b>${calismaGunleri.length - 1} + 1 prova</b></div>
+    <div class="kutu"><small>Çalışma günü</small><b>${calismaGunleri.length - 1} + 1 ${calismaGunleri.some(g => g.tip === 'tekrar') ? 'tekrar' : 'prova'}</b></div>
     <div class="kutu"><small>Tatil dönüşü</small><b>Koçuna çizelgeni getir</b></div>
   </div>
 
@@ -61,9 +61,9 @@ const sayfa1 = (k) => `
     <div>
       <h3>3 · Tatil takvimi</h3>
       <table class="takvim">
-        ${p.gunler.map(g => `<tr class="${g.tip}"><td>${g.g} Kas ${g.ad}</td><td>${({dinlen:'Dinlenme · ders yok', calis:'Çalışma günü', prova:'Prova günü', hazirlik:'Hazırlık günü'})[g.tip]}</td></tr>`).join('')}
+        ${p.gunler.map(g => `<tr class="${g.tip}"><td>${g.g} Kas ${g.ad}</td><td>${({dinlen:'Dinlenme · ders yok', calis:'Çalışma günü', prova:'Prova günü', tekrar:'Tekrar günü · yeni soru yok', hazirlik:'Hazırlık günü'})[g.tip]}</td></tr>`).join('')}
       </table>
-      <div class="prova"><b>Prova günü</b>${esc(k.ozel)}</div>
+      <div class="prova"><b>${esc(k.ozelBaslik || 'Prova günü')}</b>${esc(k.ozel)}</div>
     </div>
   </div>
 
@@ -80,7 +80,7 @@ const sayfa2 = (k) => `
   <p class="aciklama">Her gün çalışmanı bitirince, çözdüğün soru sayısını kutuya yaz. Hedefin altında kaldıysan sorun değil, dürüst yaz. Koç öğretmenin en çok buna bakacak.</p>
   <table class="cizelge">
     <thead>
-      <tr><th class="ders">Ders · günlük hedef</th>${calismaGunleri.map(g => `<th class="${g.tip}">${g.g} Kas<br><small>${g.ad}${g.tip === 'prova' ? ' · Prova' : ''}</small></th>`).join('')}<th>Toplam</th></tr>
+      <tr><th class="ders">Ders · günlük hedef</th>${calismaGunleri.map(g => `<th class="${g.tip}">${g.g} Kas<br><small>${g.ad}${g.tip === 'prova' ? ' · Prova' : g.tip === 'tekrar' ? ' · Tekrar' : ''}</small></th>`).join('')}<th>Toplam</th></tr>
     </thead>
     <tbody>
       ${k.takip.map(t => `<tr><td class="ders"><b>${esc(t[0])}</b><small>${esc(t[1])}</small></td>${calismaGunleri.map(g => `<td class="${g.tip}"></td>`).join('')}<td class="top"></td></tr>`).join('')}
@@ -90,11 +90,17 @@ const sayfa2 = (k) => `
 
   <div class="iki alt-blok">
     <div>
+      ${calismaGunleri.some(g => g.tip === 'prova') ? `
       <h3>6 · Prova sonucu (${esc(calismaGunleri.find(g => g.tip === 'prova').g)} Kasım)</h3>
       <table class="prova-tablo">
         <tr><th></th><th>Doğru</th><th>Yanlış</th><th>Boş</th><th>Süre</th></tr>
         ${['Matematik','Türkçe','Fen Bilimleri','Sosyal Bilgiler','İngilizce'].map(d => `<tr><td>${d}</td><td></td><td></td><td></td><td></td></tr>`).join('')}
-      </table>
+      </table>` : `
+      <h3>6 · Tekrar günü notlarım</h3>
+      <table class="prova-tablo">
+        <tr><th>Ders</th><th>Tekrar ettiğim konu</th><th>Yanlış sayısı</th></tr>
+        ${['Matematik','Türkçe','Fen Bilimleri','Sosyal Bilgiler','İngilizce'].map(d => `<tr><td>${d}</td><td></td><td></td></tr>`).join('')}
+      </table>`}
     </div>
     <div>
       <h3>7 · Kendi değerlendirmem</h3>
@@ -108,7 +114,7 @@ const sayfa2 = (k) => `
 
   <div class="koc">
     <b>Koç kontrolü · 23-29 Kasım</b>
-    <span>☐ Çizelge getirildi</span><span>☐ Hedefin %70'i ve üzeri</span><span>☐ Prova sonucu konuşuldu</span>
+    <span>☐ Çizelge getirildi</span><span>☐ Hedefin %70'i ve üzeri</span><span>☐ Zorlandığı konular konuşuldu</span>
     <span class="imza">Koç imzası: ............................</span>
   </div>
   ${alt(2)}
@@ -142,12 +148,12 @@ table{width:100%;border-collapse:collapse}
 .hedef tr:nth-child(even) td{background:#FBF7F0}
 .iki{display:grid;grid-template-columns:1.15fr 1fr;gap:6mm}
 .akis td{padding:1.5mm 2mm;border-bottom:.25mm solid #E2DCCF;line-height:1.3}
-.akis td.s{white-space:nowrap;width:26mm;color:#5B6B70;font-variant-numeric:tabular-nums}
+.akis td.s{white-space:nowrap;width:22mm;color:#5B6B70;font-variant-numeric:tabular-nums}
 .akis tr.hafif td{color:#8A9599;font-size:8.3pt}
 .akis tr.hafif b{font-weight:500}
 .takvim td{padding:1.15mm 2mm;border-bottom:.25mm solid #E2DCCF;font-size:8.5pt}
 .takvim tr.dinlen td{color:#3E9B6B}
-.takvim tr.prova td{background:var(--k);color:#fff;font-weight:700}
+.takvim tr.prova td,.takvim tr.tekrar td{background:var(--k);color:#fff;font-weight:700}
 .takvim tr.hazirlik td{color:#5B6B70;font-style:italic}
 .prova{margin-top:2.5mm;border-left:1.2mm solid var(--k);background:#FBF7F0;padding:2mm 3mm;border-radius:1mm;line-height:1.35;font-size:8.6pt}
 .prova b{display:block;font-size:7.5pt;text-transform:uppercase;letter-spacing:.6px;color:var(--k)}
@@ -157,13 +163,13 @@ table{width:100%;border-collapse:collapse}
 .velinot{margin-top:3.5mm;background:rgba(64,79,110,.08);padding:2.5mm 3.5mm;border-radius:2mm;line-height:1.4}
 .aciklama{color:#5B6B70;margin-bottom:2.5mm;line-height:1.4}
 .cizelge th{background:#404F6E;color:#fff;font-size:8pt;padding:1.8mm 1mm;text-align:center;font-weight:600;border:.25mm solid #404F6E}
-.cizelge th.prova{background:var(--k);border-color:var(--k)}
+.cizelge th.prova,.cizelge th.tekrar{background:var(--k);border-color:var(--k)}
 .cizelge th small{font-weight:400;opacity:.85}
 .cizelge th.ders{text-align:left;padding-left:2.5mm;width:44mm}
 .cizelge td{border:.25mm solid #C9C2B4;height:15mm}
 .cizelge td.ders{padding:1.5mm 2.5mm;line-height:1.25}
 .cizelge td.ders small{display:block;color:var(--k);font-weight:600;font-size:8pt}
-.cizelge td.prova{background:#FBF7F0}
+.cizelge td.prova,.cizelge td.tekrar{background:#FBF7F0}
 .cizelge td.top{background:#F1EEE7;width:17mm}
 .cizelge tr.paraf td{height:10mm}
 .alt-blok{margin-top:1mm}

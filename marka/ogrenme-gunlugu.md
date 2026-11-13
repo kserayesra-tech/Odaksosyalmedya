@@ -79,3 +79,9 @@ Biçim:
 - Düzeltme: Kullanıcı şöyle dedi: "7'leri de biraz düşürelim, çocuklarımın kaygısı çok arttı, ağladılar."
 - Kural: 7. sınıf ve altı için programlarda **kaygı artırıcı dil kullanılmaz** ("LGS provası", süre baskısı, büyük sayılar). Prova günü süre tutmadan, "amaç puan değil, eksik görmek" çerçevesiyle verilir. Velimize notta çaba takdiri vurgulanır. 7. sınıf: Matematik 35, Türkçe 25 paragraf.
 - Kapsam: program | veli mesajı | post
+
+## 2026-11-13 · Ortaokulda deneme ve saat dayatması yok
+- Neydi: Tatil programında 21 Kasım "prova günü" (mini deneme) olarak planlanmıştı. Kurallarda "en geç 09:30'da masada" ve akışta saat saat bir plan vardı.
+- Düzeltme: Kullanıcı "Denemeyi de silelim, en geç kaçta uyanacağız yazmayalım" dedi (7. sınıfta kaygı ve ağlama sonrası).
+- Kural: Ortaokul (5-6-7) tatil programlarında deneme yoktur, yerine "tekrar günü" (yeni soru yok) konur. Saat dayatılmaz. Akış "1. çalışma, mola…" sırasıyla verilir, başlangıç saatini öğrenci seçer.
+- Kapsam: program | post

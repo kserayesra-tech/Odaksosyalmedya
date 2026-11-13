@@ -40,7 +40,7 @@
   {
    "g": "21",
    "ad": "Cmt",
-   "tip": "prova"
+   "tip": "tekrar"
   },
   {
    "g": "22",
@@ -54,8 +54,8 @@
    "Yorgun zihin tekrar yapamaz. 14-15 Kasım ders yok."
   ],
   [
-   "Her gün aynı saatte, sabah başla",
-   "En geç 09:30'da masada. Akşam 20:00'den sonra ders yok."
+   "Her gün düzenli bir saatte başla",
+   "Saatini sen seç, önemli olan her gün aynı olması. Gece geç saate bırakma."
   ],
   [
    "40-45 dakika çalış, 10 dakika mola",
@@ -100,46 +100,46 @@
      "Her kelimeyi bir cümle içinde kullansın."
     ]
    ],
-   "ozel": "Cumartesi: 50 soruluk karışık mini deneme + haftanın yanlışları.",
+   "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
    "not": "Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar.",
    "akis": [
     [
-     "09:30 – 10:10",
+     "1. çalışma",
      "Matematik",
      "20 soru · işlemler deftere"
     ],
     [
-     "10:10 – 10:20",
+     "Mola",
      "Mola",
      "Ekransız: su, hareket"
     ],
     [
-     "10:20 – 11:00",
+     "2. çalışma",
      "Türkçe",
      "15 paragraf + 10 dil bilgisi"
     ],
     [
-     "11:00 – 11:15",
+     "Mola",
      "Mola",
      ""
     ],
     [
-     "11:15 – 12:00",
+     "3. çalışma",
      "Fen + Sosyal",
      "20 Fen + 15 Sosyal sorusu"
     ],
     [
-     "12:00 – 14:00",
+     "Öğle arası",
      "Serbest",
      "Öğle yemeği, dinlenme"
     ],
     [
-     "14:00 – 14:20",
+     "4. çalışma",
      "İngilizce",
      "10 kelime + 10 soru"
     ],
     [
-     "Akşam · 30 dk",
+     "Akşam",
      "Kitap",
      "Ekransız okuma, yatmadan önce"
     ]
@@ -169,7 +169,8 @@
      "Kitap okuma",
      "30 dk"
     ]
-   ]
+   ],
+   "ozelBaslik": "Tekrar günü"
   },
   {
    "id": "6",
@@ -204,51 +205,51 @@
      "Kısa bir diyaloğu sesli okusun."
     ]
    ],
-   "ozel": "Cumartesi: 60 soruluk karışık mini deneme, 70 dk süre tutarak.",
+   "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
    "not": "Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli.",
    "akis": [
     [
-     "09:30 – 10:10",
+     "1. çalışma",
      "Matematik",
      "25 soru · ilk 15 kolay, son 10 zor"
     ],
     [
-     "10:10 – 10:20",
+     "Mola",
      "Mola",
      "Ekransız"
     ],
     [
-     "10:20 – 11:00",
+     "2. çalışma",
      "Türkçe",
      "20 paragraf + 15 dil bilgisi"
     ],
     [
-     "11:00 – 11:15",
+     "Mola",
      "Mola",
      ""
     ],
     [
-     "11:15 – 11:55",
+     "3. çalışma",
      "Fen Bilimleri",
      "25 soru + 1 sayfa şema özet"
     ],
     [
-     "12:00 – 14:00",
+     "Öğle arası",
      "Serbest",
      "Öğle yemeği, dinlenme"
     ],
     [
-     "14:00 – 14:30",
+     "4. çalışma",
      "Sosyal Bilgiler",
      "20 soru"
     ],
     [
-     "14:40 – 15:00",
+     "5. çalışma",
      "İngilizce",
      "15 kelime + 10 soru"
     ],
     [
-     "Akşam · 30 dk",
+     "Akşam",
      "Kitap",
      "Ekransız okuma"
     ]
@@ -278,7 +279,8 @@
      "Kitap okuma",
      "30 dk"
     ]
-   ]
+   ],
+   "ozelBaslik": "Tekrar günü"
   },
   {
    "id": "7",
@@ -313,51 +315,51 @@
      "Kelimeleri önceki günlerinkilerle birlikte tekrar etsin."
     ]
    ],
-   "ozel": "Cumartesi: 50 soruluk karışık mini deneme. Süre tutmadan, rahatça çözsün. Amaç puan değil, hangi konuya döneceğini görmek.",
+   "ozel": "Cumartesi yeni soru yok. Hafta boyunca yanlış yaptığın soruları yeniden çöz, işaretlediğin kavramları tekrar et, kitabını oku.",
    "not": "Hedefin tamamını yapamadığı gün sorun değil. Önemli olan her gün masaya oturması. Lütfen sonuçtan çok çabasını takdir edin.",
    "akis": [
     [
-     "09:30 – 10:10",
+     "1. çalışma",
      "Matematik",
      "25 temel soru"
     ],
     [
-     "10:10 – 10:20",
+     "Mola",
      "Mola",
      "Ekransız"
     ],
     [
-     "10:20 – 11:00",
+     "2. çalışma",
      "Türkçe",
      "25 paragraf + 10 dil bilgisi"
     ],
     [
-     "11:00 – 11:10",
+     "Mola",
      "Mola",
      ""
     ],
     [
-     "11:10 – 11:50",
+     "3. çalışma",
      "Fen Bilimleri",
      "25 soru"
     ],
     [
-     "11:50 – 13:30",
+     "Öğle arası",
      "Serbest",
      "Öğle yemeği, dinlenme"
     ],
     [
-     "13:30 – 14:10",
+     "4. çalışma",
      "Matematik + Sosyal",
      "10 yeni nesil + 20 Sosyal sorusu"
     ],
     [
-     "14:20 – 14:40",
+     "5. çalışma",
      "İngilizce",
      "15 soru + 10 kelime"
     ],
     [
-     "Akşam · 30 dk",
+     "Akşam",
      "Kitap",
      "Ekransız okuma"
     ]
@@ -387,7 +389,8 @@
      "Kitap okuma",
      "30 dk"
     ]
-   ]
+   ],
+   "ozelBaslik": "Tekrar günü"
   },
   {
    "id": "8",
@@ -536,8 +539,8 @@
  ],
  "ozelgunler": [
   [
-   "21 Kasım · Prova günü",
-   "Kademenize ait karttaki prova görevi: mini deneme, branş denemesi ya da evde tam deneme."
+   "21 Kasım · Tekrar günü",
+   "Yeni soru yok. Haftanın yanlışlarına dön, kitabını oku."
   ],
   [
    "22 Kasım · Hazırlık günü",
