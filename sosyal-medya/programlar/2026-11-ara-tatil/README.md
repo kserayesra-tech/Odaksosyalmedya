@@ -35,14 +35,19 @@ Yeniden üretmek için: `node olustur.js 5,6,7 ortaokul` (görsel kartlar) · `n
 > Neden veliye Cuma günü gönderiliyor? Çocuk çıktıyı elinde getirdiği akşam veliye de ulaşırsa ikisi aynı şeyi görür.
 > Perşembe gönderilirse veli sorduğunda çocuk "daha almadık" der.
 
-## Veli grubu mesajı (öneri tonu)
+## Veli grubu mesajı (son hal · PDF ile birlikte gönderilir)
 > Değerli velilerimiz, merhaba 🌿
-> 14-22 Kasım ara tatili için rehberlik birimimiz olarak **{5./6./7.} sınıf** öğrencilerimize yönelik bir çalışma programı **önerisi** hazırladık. Görseli ekte bulabilirsiniz. Çocuklarımıza bugün basılı hâlini de verdik.
-> Bu program bir zorunluluk değil, bir yol haritasıdır. Tatilin ilk iki günü tamamen dinlenmeye ayrıldı. Sonraki günlerde kendi seçtiği düzenli bir saatte, kısa molalarla çalışması yeterli. Deneme yok, saat zorunluluğu yok. Sayılar birer öneri. Programı çocuğunuzun temposuna göre esnetebilirsiniz. Önemli olan her gün biraz, ama düzenli çalışması.
-> Koç öğretmenimizin verdiği tatil ödevleri varsa önce onlar tamamlanmalı. Program, kalan zaman için bir öneri niteliğinde.
-> Arka sayfadaki "Emek çizelgesi"ne çalıştığı günleri işaretlemesi yeterli. Bu bir sınav değil, kendi emeğini görmesi için. Tatil dönüşü koç öğretmenimizle birlikte bakacağız.
+>
+> Rehberlik servisimiz, ara tatil için **{5./6./7.} sınıf** öğrencilerimize yönelik bir çalışma programı **önerisi** hazırladı. Bugün çocuklarımıza basılı olarak verdik. Derse gelemeyen öğrencilerimiz için de PDF hâlini buradan paylaşıyorum.
+>
+> Bu program bir zorunluluk değil, bir yol haritasıdır. İçinde deneme ya da saat zorunluluğu yok. Sayılar birer öneri, çocuğunuzun temposuna göre esnetebilirsiniz. İlk iki gün tamamen dinlenmeye ayrıldı.
+>
+> Sizden tek ricamız: Lütfen hedeflerin tamamını beklemeyin. Her gün biraz çalışması bizim için yeterli. Kâğıdın arkasındaki "Emek çizelgesi"ni çocuğunuz kendisi işaretlesin. Sonuçtan çok emeğini takdir etmeniz en büyük destek olacaktır.
+>
+> Koç öğretmenimizin verdiği tatil ödevleri varsa önce onlar tamamlanmalı. Tatil dönüşü çizelgeye koç öğretmenimizle birlikte bakacağız.
+>
 > Hepinize keyifli ve dinlendirici bir tatil dileriz.
-> Odak Eğitim Rehberlik Birimi
+> Odak Eğitim Rehberlik Servisi
 
 ## Koç grubu mesajı (5-6-7 koçları · yönlendirme, onay istemez)
 > Değerli hocalarım,
