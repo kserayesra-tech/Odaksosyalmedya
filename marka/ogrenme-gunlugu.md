@@ -67,3 +67,9 @@ Biçim:
 - Düzeltme: Kullanıcı "6. sınıfları 25 matematik, 20 paragraf yapalım" dedi.
 - Kural: 6. sınıf ara tatil hedefi günlük Matematik 25 soru, Türkçe 20 paragraf (+15 dil bilgisi). Kademeler arası miktarlar karşılaştırılırken bu değer referans alınır.
 - Kapsam: koçluk | program
+
+## 2026-11-13 · Kademeler arası tutarlılık
+- Neydi: 6. sınıf düşürülünce 5. sınıf (30 mat, 20 paragraf) 6. sınıftan fazla kaldı.
+- Düzeltme: Kullanıcı denetçi önerisini kabul etti: 5. sınıf 20 matematik, 15 paragraf.
+- Kural: Programlarda günlük miktarlar kademeyle **artar** (5 < 6 < 7 < 8). Bir kademe değişince komşu kademeler de kontrol edilir.
+- Kapsam: program

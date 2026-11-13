@@ -76,12 +76,12 @@
    "dersler": [
     [
      "Matematik",
-     "30 soru",
+     "20 soru",
      "İşlemi deftere yazarak çözsün. Yanlışı silmesin, yanına doğrusunu yazsın."
     ],
     [
      "Türkçe",
-     "20 paragraf + 10 dil bilgisi",
+     "15 paragraf + 10 dil bilgisi",
      "Ayrıca 30 dk kitap. Okuduğunu size 3 cümleyle anlatsın."
     ],
     [
@@ -106,7 +106,7 @@
     [
      "09:30 – 10:10",
      "Matematik",
-     "30 soru · işlemler deftere"
+     "20 soru · işlemler deftere"
     ],
     [
      "10:10 – 10:20",
@@ -116,7 +116,7 @@
     [
      "10:20 – 11:00",
      "Türkçe",
-     "20 paragraf + 10 dil bilgisi"
+     "15 paragraf + 10 dil bilgisi"
     ],
     [
      "11:00 – 11:15",
@@ -147,11 +147,11 @@
    "takip": [
     [
      "Matematik",
-     "30 soru"
+     "20 soru"
     ],
     [
      "Türkçe",
-     "30 soru"
+     "25 soru"
     ],
     [
      "Fen Bilimleri",
