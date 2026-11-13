@@ -101,7 +101,75 @@
     ]
    ],
    "ozel": "Cumartesi: 50 soruluk karışık mini deneme + haftanın yanlışları.",
-   "not": "Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar."
+   "not": "Bu yaşta süre değil düzen önemli. Her gün aynı saatte başlamak alışkanlığı kurar.",
+   "akis": [
+    [
+     "09:30 – 10:10",
+     "Matematik",
+     "30 soru · işlemler deftere"
+    ],
+    [
+     "10:10 – 10:20",
+     "Mola",
+     "Ekransız: su, hareket"
+    ],
+    [
+     "10:20 – 11:00",
+     "Türkçe",
+     "20 paragraf + 10 dil bilgisi"
+    ],
+    [
+     "11:00 – 11:15",
+     "Mola",
+     ""
+    ],
+    [
+     "11:15 – 12:00",
+     "Fen + Sosyal",
+     "20 Fen + 15 Sosyal sorusu"
+    ],
+    [
+     "12:00 – 14:00",
+     "Serbest",
+     "Öğle yemeği, dinlenme"
+    ],
+    [
+     "14:00 – 14:20",
+     "İngilizce",
+     "10 kelime + 10 soru"
+    ],
+    [
+     "Akşam · 30 dk",
+     "Kitap",
+     "Ekransız okuma, yatmadan önce"
+    ]
+   ],
+   "takip": [
+    [
+     "Matematik",
+     "30 soru"
+    ],
+    [
+     "Türkçe",
+     "30 soru"
+    ],
+    [
+     "Fen Bilimleri",
+     "20 soru"
+    ],
+    [
+     "Sosyal Bilgiler",
+     "15 soru"
+    ],
+    [
+     "İngilizce",
+     "10 soru + 10 kelime"
+    ],
+    [
+     "Kitap okuma",
+     "30 dk"
+    ]
+   ]
   },
   {
    "id": "6",
@@ -137,7 +205,80 @@
     ]
    ],
    "ozel": "Cumartesi: 60 soruluk karışık mini deneme, 70 dk süre tutarak.",
-   "not": "Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli."
+   "not": "Ekran saatini çocuğunuzla birlikte belirleyin. “Çalışma bitmeden ekran yok” kuralı yeterli.",
+   "akis": [
+    [
+     "09:30 – 10:10",
+     "Matematik",
+     "40 soru · ilk 20 kolay, son 20 zor"
+    ],
+    [
+     "10:10 – 10:20",
+     "Mola",
+     "Ekransız"
+    ],
+    [
+     "10:20 – 11:00",
+     "Türkçe",
+     "25 paragraf + 15 dil bilgisi"
+    ],
+    [
+     "11:00 – 11:15",
+     "Mola",
+     ""
+    ],
+    [
+     "11:15 – 11:55",
+     "Fen Bilimleri",
+     "25 soru + 1 sayfa şema özet"
+    ],
+    [
+     "12:00 – 14:00",
+     "Serbest",
+     "Öğle yemeği, dinlenme"
+    ],
+    [
+     "14:00 – 14:30",
+     "Sosyal Bilgiler",
+     "20 soru"
+    ],
+    [
+     "14:40 – 15:00",
+     "İngilizce",
+     "15 kelime + 10 soru"
+    ],
+    [
+     "Akşam · 30 dk",
+     "Kitap",
+     "Ekransız okuma"
+    ]
+   ],
+   "takip": [
+    [
+     "Matematik",
+     "40 soru"
+    ],
+    [
+     "Türkçe",
+     "40 soru"
+    ],
+    [
+     "Fen Bilimleri",
+     "25 soru"
+    ],
+    [
+     "Sosyal Bilgiler",
+     "20 soru"
+    ],
+    [
+     "İngilizce",
+     "10 soru + 15 kelime"
+    ],
+    [
+     "Kitap okuma",
+     "30 dk"
+    ]
+   ]
   },
   {
    "id": "7",
@@ -173,7 +314,90 @@
     ]
    ],
    "ozel": "Cumartesi: 90 soruluk karışık deneme, 100 dk süre tutarak.",
-   "not": "7. sınıf LGS'nin provasıdır. Yeni nesil sorudan korkmasın. Doğru sayısından çok denemesi önemli."
+   "not": "7. sınıf LGS'nin provasıdır. Yeni nesil sorudan korkmasın. Doğru sayısından çok denemesi önemli.",
+   "akis": [
+    [
+     "09:30 – 10:10",
+     "Matematik 1",
+     "30 soru · temel"
+    ],
+    [
+     "10:10 – 10:20",
+     "Mola",
+     "Ekransız"
+    ],
+    [
+     "10:20 – 11:00",
+     "Türkçe",
+     "30 paragraf · süre tut"
+    ],
+    [
+     "11:00 – 11:10",
+     "Mola",
+     ""
+    ],
+    [
+     "11:10 – 11:50",
+     "Fen Bilimleri",
+     "35 soru"
+    ],
+    [
+     "11:50 – 13:30",
+     "Serbest",
+     "Öğle yemeği, dinlenme"
+    ],
+    [
+     "13:30 – 14:10",
+     "Matematik 2",
+     "20 yeni nesil soru"
+    ],
+    [
+     "14:10 – 14:20",
+     "Mola",
+     ""
+    ],
+    [
+     "14:20 – 15:00",
+     "Sosyal + Dil bilgisi",
+     "25 Sosyal + 20 dil bilgisi"
+    ],
+    [
+     "15:10 – 15:30",
+     "İngilizce",
+     "20 soru + 15 kelime"
+    ],
+    [
+     "Akşam · 30 dk",
+     "Kitap",
+     "Ekransız okuma"
+    ]
+   ],
+   "takip": [
+    [
+     "Matematik",
+     "50 soru"
+    ],
+    [
+     "Türkçe",
+     "50 soru"
+    ],
+    [
+     "Fen Bilimleri",
+     "35 soru"
+    ],
+    [
+     "Sosyal Bilgiler",
+     "25 soru"
+    ],
+    [
+     "İngilizce",
+     "20 soru + 15 kelime"
+    ],
+    [
+     "Kitap okuma",
+     "30 dk"
+    ]
+   ]
   },
   {
    "id": "8",

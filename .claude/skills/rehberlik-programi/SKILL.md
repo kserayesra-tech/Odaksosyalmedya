@@ -15,6 +15,7 @@ description: Ara tatil, yarıyıl tatili, sınav haftası, karne dönemi gibi za
    Kural: süreler kademeyle artar. Mezunun okulu olmadığı için en uzun süre onundur.
 3. `gunler`, `kurallar`, `ozelgunler`, `baslik`, `tarih` alanlarını döneme göre güncelle.
 4. **Görselleri üret:** `node olustur.js`. Çıktıda "taşma" uyarısı varsa metni kısalt. PNG'lere tek tek bak.
-5. **Mesajları yaz (README.md):** veli grubu mesajı, koç yönlendirme mesajı (onay istemez, 3 adım) ve dağıtım takvimi.
-6. **Denetle:** `denetim/post-denetim-listesi.md`. Sınav süreleri gibi dış bilgileri doğrula.
-7. Haftalık plan dosyasına Instagram postu olarak ekle ve görselleri kullanıcıya gönder.
+5. **Öğrenci belgesi:** Her kademe için `akis` (saat saat günlük akış) ve `takip` (çizelge satırları) alanlarını doldur, `node pdf_olustur.js` ile A4 ön-arka PDF üret. Akıştaki soru sayıları hedef tablosuyla birebir tutmalı.
+6. **Mesajları yaz (README.md):** veli grubu mesajı, koç yönlendirme mesajı (onay istemez, 3 adım) ve dağıtım takvimi.
+7. **Denetle:** `denetim/post-denetim-listesi.md`. Sınav süreleri gibi dış bilgileri doğrula.
+8. Haftalık plan dosyasına Instagram postu olarak ekle ve görselleri kullanıcıya gönder.

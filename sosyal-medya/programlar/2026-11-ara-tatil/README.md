@@ -14,12 +14,18 @@ miktar ve her dersin nasıl çalışılacağını içerir.
 | 8 (LGS), 12 / mezun | ⏸ Kurum tatilde açık olacak. Program kurumun tatil takvimine göre yeniden yazılacak |
 | 9-10, 11 | ❓ Kurumun bu kademeler için tatilde açık olup olmadığı netleşmedi |
 
-Yeniden üretmek için: `node olustur.js 5,6,7 ortaokul`
+Yeniden üretmek için: `node olustur.js 5,6,7 ortaokul` (görsel kartlar) · `node pdf_olustur.js` (A4 belge)
+
+## Öğrenci belgesi (A4, ön-arka tek yaprak) · `pdf/`
+- **Ön yüz:** öğrenci/koç alanı · günlük hedef ve yöntem · saat saat örnek günlük akış · tatil takvimi · prova günü · 4 kural · velimize not
+- **Arka yüz:** ders × gün takip çizelgesi (çözülen soru + veli parafı) · prova sonucu (D/Y/B) · öz değerlendirme · koç kontrol kutusu
+- `pdf/5-sinif.pdf`, `pdf/6-sinif.pdf`, `pdf/7-sinif.pdf` · fotokopi için `pdf/hepsi-baski.pdf` (sırayla 5, 6, 7; **çift taraflı** basılır)
+- Eski `yazdir-ortaokul/` çıktıları bu belgeyle değiştirildi.
 
 ## Dağıtım planı (ortaokul)
 | Ne zaman | Kanal | Ne |
 |---|---|---|
-| Per 12 Kas sabah | Fotokopi | A4 çıktılar: 5. sınıf 8 · 6. sınıf 26 · 7. sınıf 60 adet (öğrenci sayısı + %10 yedek). Renkli tercih edilir, siyah-beyaz da okunur |
+| Per 12 Kas sabah | Fotokopi | A4 belge (`pdf/`, çift taraflı): 5. sınıf 8 · 6. sınıf 26 · 7. sınıf 60 adet (öğrenci sayısı + %10 yedek). Renkli tercih edilir, siyah-beyaz da okunur |
 | Per 12 Kas 18:00 | Koç grubu (5-6-7 koçları) | Yönlendirme mesajı + PDF'ler |
 | Cum 13 Kas, son ders | Sınıfta | Koç çıktıyı dağıtır, 2 dakikada tanıtır, öğrenci adını yazar |
 | Cum 13 Kas 19:00 | 5-6-7 veli WhatsApp grupları | Kapak + o grubun kademe kartı + bilgilendirme mesajı |
