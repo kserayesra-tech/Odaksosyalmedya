@@ -96,3 +96,15 @@ Biçim:
   - Her belgede "Zorlandığında ne yapabilirim?" kutusu (nefes, mola, anlat, yarın yeni gün) yer alır.
   - Kural 4 "Kendine nazik ol" olur.
 - Kapsam: program | veli mesajı | post
+
+## 2026-11-24 · İş takibi dosyası
+- Neydi: CLAUDE.md'de tarif edilen `Rehberlik İş Takibi` → `İşler` sekmesi Drive'da bulunamadı.
+- Düzeltme: Kullanıcı "SERAY İŞ TAKİBİ'ne yazabilirsin" dedi.
+- Kural: Kurumsal ve proje işleri Drive'daki `SERAY İŞ TAKİBİ` dosyasının `Projeler` sekmesine yazılır (A: Son tarih · B: İş · C: Alan · D: Kim/Grup · E: Öncelik · F: Durum · G: Not). Diğer sekmeler otomatik dolan öğrenci panolarıdır, oralara elle yazılmaz.
+- Kapsam: genel
+
+## 2026-11-24 · Koçluk modeli hedefi
+- Neydi: Koçluk raporlarını başka kurumlara satma fikri konuşuldu.
+- Düzeltme: Kullanıcı, raporları "eğitimini verecek kadar" geliştirmeyi seçti. Önce kendi 21 grupta kalite kanıtlanacak, dış satış patron onayından sonra gelecek.
+- Kural: Koçluk raporu işlerinde hedef, öğretilebilir bir yöntemdir. Her denetimde V satırı doluluğu, kararlı koç notu ve veli görüşmesi oranı ölçülür.
+- Kapsam: koçluk
